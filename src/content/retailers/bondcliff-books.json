@@ -21,13 +21,14 @@
     {
       "type": "physical",
       "branch_name": "",
-      "street1": "",
+      "street1": "4 Eames Wy",
       "street2": null,
       "city": "Littleton",
       "state": "NH",
-      "postal_code": "",
-      "phone": "",
-      "store_url": "https://www.bondcliffbooks.com/",
+      "postal_code": "03561",
+      "phone": "603-444-4880",
+      "email": "info@bondcliffbooks.com",
+      "store_url": "http://www.bondcliffbooks.com/",
       "products": [
         "New Hampshire 52 With A View Passport",
         "White Mountain 4000-Footers Passport",

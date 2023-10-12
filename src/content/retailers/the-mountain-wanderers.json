@@ -4,12 +4,13 @@
     {
       "type": "physical",
       "branch_name": "",
-      "street1": "",
-      "street2": null,
+      "street1": "PO Box 485",
+      "street2": "Rt. 112",
       "city": "Lincoln",
       "state": "NH",
-      "postal_code": "",
-      "phone": "",
+      "postal_code": "03251",
+      "phone": "603-745-2594",
+      "email": "info@mountainwanderer.com",
       "store_url": "http://www.mountainwanderer.com/",
       "products": [
         "Topographic Fingerprints of the Four Thousand Footers",

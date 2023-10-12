@@ -2,15 +2,24 @@
   "name": "Art Source International",
   "locations": [
     {
+      "type": "online",
+      "products": [
+        {
+          "title": "Periodic Table of the Fifty-Something Colorado Fourteeners",
+          "url": "https://artsourceinternational.com/shop/vintage-posters/periodic-table-of-the-fifty-something-colorado-fourteeners/"
+        }
+      ]
+    },
+    {
       "type": "physical",
       "branch_name": "",
-      "street1": "",
+      "street1": "1237 Pearl Street",
       "street2": null,
       "city": "Boulder",
       "state": "CO",
-      "postal_code": "",
-      "phone": "",
-      "store_url": "",
+      "postal_code": "80302",
+      "phone": "800-304-5029",
+      "store_url": "https://artsourceinternational.com/",
       "products": [
         "Periodic Table of the Fifty-Something Colorado Fourteeners"
       ]

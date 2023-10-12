@@ -40,7 +40,6 @@ retailersData.forEach((retailer) => {
         store_url: location.store_url,
         products: location.products,
       });
-
     }
   });
 

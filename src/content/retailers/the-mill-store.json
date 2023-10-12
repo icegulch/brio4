@@ -4,13 +4,14 @@
     {
       "type": "physical",
       "branch_name": "",
-      "street1": "",
+      "street1": "1249 NH Route 175",
       "street2": null,
       "city": "Campton",
       "state": "NH",
-      "postal_code": "",
-      "phone": "",
-      "store_url": "",
+      "postal_code": "03223",
+      "phone": "603-315-4172",
+      "email": "sabartlett54@gmail.com",
+      "store_url": "https://www.facebook.com/p/The-Mill-Store-Candy-Counter-and-Vintage-Goods-100057138772418/",
       "products": [
         "Topographic Fingerprints of the Four Thousand Footers",
         "New Hampshire 52 With A View Passport",

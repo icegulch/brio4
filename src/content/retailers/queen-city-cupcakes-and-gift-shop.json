@@ -1,16 +1,17 @@
 {
-  "name": "Pop of Color",
+  "name": "Queen City Cupcakes & Gift Shop",
   "locations": [
     {
       "type": "physical",
       "branch_name": "",
-      "street1": "",
-      "street2": null,
+      "street1": "816 Elm St",
+      "street2": "Floor 1, The Beacon",
       "city": "Manchester",
       "state": "NH",
-      "postal_code": "",
-      "phone": "",
-      "store_url": "",
+      "postal_code": "03101",
+      "phone": "603-624-4999",
+      "email": "",
+      "store_url": "http://www.qccupcakes.com/",
       "products": [
         "New Hampshire 52 With A View Passport",
         "White Mountain 4000-Footers Passport",

@@ -4,12 +4,13 @@
     {
       "type": "physical",
       "branch_name": "",
-      "street1": "",
+      "street1": "672 Sugar Hill Rd",
       "street2": null,
       "city": "Sugar Hill",
       "state": "NH",
-      "postal_code": "",
-      "phone": "",
+      "postal_code": "03586",
+      "phone": "603-823-5575",
+      "email": "info@pollyspancakeparlor.com",
       "store_url": "https://pollyspancakeparlor.com/",
       "products": [
         "New Hampshire 52 With A View Passport",

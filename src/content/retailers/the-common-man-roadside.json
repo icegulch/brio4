@@ -1,16 +1,17 @@
 {
-  "name": "The Common Man Roadside",
+  "name": "The Common Man Roadside South",
   "locations": [
     {
       "type": "physical",
-      "branch_name": "",
-      "street1": "",
+      "branch_name": "Hooksett Welcome Center",
+      "street1": "25 Springer Rd",
       "street2": null,
       "city": "Hooksett",
       "state": "NH",
-      "postal_code": "",
-      "phone": "",
-      "store_url": "https://thecmanroadside.com/common-man-roadside/",
+      "postal_code": "03106",
+      "phone": "603-210-5305",
+      "email": "info@thecmanroadside.com",
+      "store_url": "https://thecmanroadside.com/",
       "products": [
         "New Hampshire 52 With A View Passport",
         "White Mountain 4000-Footers Passport",

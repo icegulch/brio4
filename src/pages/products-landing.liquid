@@ -3,21 +3,18 @@ permalink: "/products/index.html"
 title: "Products"
 ---
 
-{% for product in products %}
-  {% if forloop.first %}
-    <dl>
-    {% endif %}
-    <dt>
-      <a href="/products/{{ product.title | slugify }}/">{{ product.title }}</a>
-    </dt>
-    <dd>
-      {{ product.meta_desc | markdownify }}
-    </dd>
-    {% if forloop.last %}
+<div style="display:grid;grid-template-columns:repeat( auto-fit, minmax(250px, 1fr) );gap:15px 30px;">
+  {% for product in products %}
+    <dl style="margin:0;">
+      <dt>
+        <a href="/products/{{ product.title | slugify }}/">{{ product.title }}</a>
+      </dt>
+      <dd style="margin:0;">
+        {{ product.meta_desc | markdownify }}
+      </dd>
     </dl>
-  {% endif %}
-{% endfor %}
-
+  {% endfor %}
+</div>
 
 <h2 style="margin: 2rem 0 0;">Online Retailers</h2>
 <div style="margin:0;display:grid;grid-template-columns:repeat( auto-fit, minmax(250px, 1fr) );gap:15px 30px;">
@@ -49,15 +46,13 @@ title: "Products"
         <dl>
           <dt style="text-transform:uppercase;font-size:0.85rem;">{{ city.name }}</dt>
           <dd style="margin:0;">
-            <ul style="list-style: outside disc;margin:0;padding-left:1rem;">
-              {% for location in city.items %}
-                <li>
-                  {{ location.name }}<br>
-                  {{ location.street1 }}, {% if location.street2 %}{{ location.street2 | append: ", " }}{% endif %}{{ location.city }}, {{ location.state }} {{ location.postal_code }}<br>
-                    {{ location.phone }} | {{ location.store_url }}
-                </li>
-              {% endfor %}
-            </ul>
+            {% for location in city.items %}
+              <address>
+                {{ location.name }}<br>
+                {{ location.street1 }}, {% if location.street2 %}{{ location.street2 | append: ", " }}{% endif %}{{ location.city }}, {{ location.state }} {{ location.postal_code }}<br>
+                  Phone | Web | Email
+              </address>
+            {% endfor %}
           </dd>
         </dl>
       {% endfor %}
@@ -76,15 +71,13 @@ title: "Products"
           <dl>
             <dt style="text-transform:uppercase;font-size:0.85rem;">{{ city.name }}</dt>
             <dd style="margin:0;">
-              <ul style="list-style: outside disc;margin:0;padding-left:1rem;">
                 {% for location in city.items %}
-                  <li>
+                  <address>
                     {{ location.name }}<br>
                     {{ location.street1 }}, {% if location.street2 %}{{ location.street2 | append: ", " }}{% endif %}{{ location.city }}, {{ location.state }} {{ location.postal_code }}<br>
-                      {{ location.phone }} | {{ location.store_url }}
-                  </li>
+                      Phone | Web | Email
+                  </address>
                 {% endfor %}
-              </ul>
             </dd>
           </dl>
         {% endfor %}

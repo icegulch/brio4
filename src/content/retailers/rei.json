@@ -4,12 +4,12 @@
     {
       "type": "physical",
       "branch_name": "North Conway",
-      "street1": "",
-      "street2": null,
+      "street1": "1498 White Mountain Hwy",
+      "street2": "C30",
       "city": "North Conway",
       "state": "NH",
-      "postal_code": "",
-      "phone": "",
+      "postal_code": "03860",
+      "phone": "603-356-0475",
       "store_url": "https://www.rei.com/stores/north-conway",
       "products": [
         "New Hampshire 52 With A View Passport",
@@ -20,12 +20,12 @@
     {
       "type": "physical",
       "branch_name": "Bedford",
-      "street1": "",
-      "street2": null,
+      "street1": "7 Market St",
+      "street2": "Ste 1",
       "city": "Bedford",
       "state": "NH",
-      "postal_code": "",
-      "phone": "",
+      "postal_code": "03110",
+      "phone": "603-471-5038",
       "store_url": "https://www.rei.com/stores/bedford",
       "products": [
         "New Hampshire 52 With A View Passport",

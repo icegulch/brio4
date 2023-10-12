@@ -4,12 +4,13 @@
     {
       "type": "physical",
       "branch_name": "",
-      "street1": "",
+      "street1": "212 Main St",
       "street2": null,
       "city": "Gorham",
       "state": "NH",
-      "postal_code": "",
-      "phone": "",
+      "postal_code": "03581",
+      "phone": "603-466-2511",
+      "email": "info@whitemountaincafe.com",
       "store_url": "http://www.whitemountaincafe.com/",
       "products": [
         "New Hampshire 52 With A View Passport",

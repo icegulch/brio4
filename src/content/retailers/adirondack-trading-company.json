@@ -4,12 +4,13 @@
     {
       "type": "physical",
       "branch_name": "",
-      "street1": "",
+      "street1": "2513 Main St",
       "street2": null,
       "city": "Lake Placid",
       "state": "NY",
-      "postal_code": "",
-      "phone": "",
+      "postal_code": "12946",
+      "phone": "518-523-4545",
+      "email": "",
       "store_url": "",
       "products": [
         "Periodic Table of the / Tableau périodique des Adirondack 46"
