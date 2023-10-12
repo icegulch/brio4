@@ -1,0 +1,55 @@
+---
+pagination:
+  data: products
+  size: 1
+  alias: product
+permalink: "/products/{{ product.title | slugify }}/index.html"
+eleventyComputed:
+  title: "{{ product.title }}"
+  meta_desc: "{{ product.meta_desc }}"
+  meta_og: "{{ product.og_img }}"
+---
+
+<h1>
+  {{ product.title }}
+</h1>
+
+{{ product.specs | join: ', ' }}
+
+{{ product.description | markdownify }}
+
+{% for image in product.images %}
+  <img
+    src="{{ site.cloudinary_url }}{{ image.public_id }}"
+    width="{% unless image.width == 0 %}{{ image.width }}{% endunless %}"
+    height="{% unless image.height == 0 %}{{ image.height }}{% endunless %}"
+    alt="{{ image.caption }}"
+    loading="lazy">
+{% endfor %}
+
+{% for retailer in product.retailers %}
+  {% if forloop.first %}
+    <ul>
+    {% endif %}
+    <li>
+      <a href="{{ retailer.url }}">{{ retailer.name }}</a>
+    </li>
+    {% if forloop.last %}
+    </ul>
+  {% endif %}
+{% endfor %}
+
+{% assign title2exclude = product.title %}
+{% for otherproduct in products %}
+  {% if forloop.first %}
+    <ul>
+    {% endif %}
+    {% unless otherproduct.title contains title2exclude %}
+      <li>
+        <a href="/products/{{ otherproduct.title | slugify }}/">{{ otherproduct.title }}</a>
+      </li>
+    {% endunless %}
+    {% if forloop.last %}
+    </ul>
+  {% endif %}
+{% endfor %}

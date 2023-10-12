@@ -1,0 +1,19 @@
+{
+  "name": "Art Source International",
+  "locations": [
+    {
+      "type": "physical",
+      "branch_name": "",
+      "street1": "",
+      "street2": null,
+      "city": "Boulder",
+      "state": "CO",
+      "postal_code": "",
+      "phone": "",
+      "store_url": "",
+      "products": [
+        "Periodic Table of the Fifty-Something Colorado Fourteeners"
+      ]
+    }
+  ]
+}

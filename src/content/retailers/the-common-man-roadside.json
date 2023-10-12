@@ -1,0 +1,21 @@
+{
+  "name": "The Common Man Roadside",
+  "locations": [
+    {
+      "type": "physical",
+      "branch_name": "",
+      "street1": "",
+      "street2": null,
+      "city": "Hooksett",
+      "state": "NH",
+      "postal_code": "",
+      "phone": "",
+      "store_url": "https://thecmanroadside.com/common-man-roadside/",
+      "products": [
+        "New Hampshire 52 With A View Passport",
+        "White Mountain 4000-Footers Passport",
+        "Periodic Table of White Mountain 4000-Footers"
+      ]
+    }
+  ]
+}

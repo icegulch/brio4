@@ -1,0 +1,20 @@
+{
+  "name": "Polly's Pancake Parlor",
+  "locations": [
+    {
+      "type": "physical",
+      "branch_name": "",
+      "street1": "",
+      "street2": null,
+      "city": "Sugar Hill",
+      "state": "NH",
+      "postal_code": "",
+      "phone": "",
+      "store_url": "https://pollyspancakeparlor.com/",
+      "products": [
+        "New Hampshire 52 With A View Passport",
+        "White Mountain 4000-Footers Passport"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "The Mill Store",
+  "locations": [
+    {
+      "type": "physical",
+      "branch_name": "",
+      "street1": "",
+      "street2": null,
+      "city": "Campton",
+      "state": "NH",
+      "postal_code": "",
+      "phone": "",
+      "store_url": "",
+      "products": [
+        "Topographic Fingerprints of the Four Thousand Footers",
+        "New Hampshire 52 With A View Passport",
+        "White Mountain 4000-Footers Passport",
+        "Periodic Table of White Mountain 4000-Footers"
+      ]
+    }
+  ]
+}

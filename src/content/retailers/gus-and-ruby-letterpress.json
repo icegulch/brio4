@@ -1,0 +1,70 @@
+{
+  "name": "Gus & Ruby Letterpress",
+  "locations": [
+    {
+      "type": "online",
+      "products": [
+        {
+          "title": "New Hampshire 52 With A View Passport",
+          "url": "https://store.gusandruby.com/wbnb-new-hampshire-52-with-a-view-passport-book.html"
+        },
+        {
+          "title": "White Mountain 4000-Footers Passport",
+          "url": ""
+        },
+        {
+          "title": "Periodic Table of White Mountain 4000-Footers",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "type": "physical",
+      "branch_name": "Portsmouth",
+      "street1": "",
+      "street2": null,
+      "city": "Portsmouth",
+      "state": "NH",
+      "postal_code": "",
+      "phone": "",
+      "store_url": "",
+      "products": [
+        "Topographic Fingerprints of the Four Thousand Footers",
+        "New Hampshire 52 With A View Passport",
+        "White Mountain 4000-Footers Passport"
+      ]
+    },
+    {
+      "type": "physical",
+      "branch_name": "Portland",
+      "street1": "",
+      "street2": null,
+      "city": "Portland",
+      "state": "ME",
+      "postal_code": "",
+      "phone": "",
+      "store_url": "",
+      "products": [
+        "Topographic Fingerprints of the Four Thousand Footers",
+        "New Hampshire 52 With A View Passport",
+        "White Mountain 4000-Footers Passport"
+      ]
+    },
+    {
+      "type": "physical",
+      "branch_name": "Boston",
+      "street1": "",
+      "street2": null,
+      "city": "Boston",
+      "state": "MA",
+      "postal_code": "",
+      "phone": "",
+      "store_url": "",
+      "products": [
+        "Topographic Fingerprints of the Four Thousand Footers",
+        "New Hampshire 52 With A View Passport",
+        "White Mountain 4000-Footers Passport"
+      ]
+    }
+  ]
+}

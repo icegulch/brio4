@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% if env == 'production' %}
+      <link
+        rel="preload"
+        href="/fonts/work-sans-v18-latin-900.woff2"
+        as="font"
+        type="font/woff"
+        crossorigin />
+      <link
+        rel="preload"
+        href="/fonts/work-sans-v18-latin-900.woff"
+        as="font"
+        type="font/woff2"
+        crossorigin />
+    {% endif %}
+    <meta charset="UTF-8">
+    <title>
+      {% if page.fileSlug == 'homepage' %}
+        {{ site.title }} | {{ site.tagline }}
+      {% elsif title %}
+        {{ site.title }} | {{ title }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </title>
+    <meta name="generator" content="{{ eleventy.generator }}">
+    <meta name="description" content="{{ site.meta_desc }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include "og.liquid" %}
+    {% include "site_icons.liquid" %}
+    <style>
+      {# include "css/site.css" #}
+    </style>
+    {% if site.env == 'production' %}
+      <link rel="preconnect" href="//res.cloudinary.com">
+      <link rel="dns-prefetch" href="//res.cloudinary.com">
+    {% endif %}
+  </head>
+  <body>
+    <header role="banner" class="site-header">
+      <div class="container-fluid container-fluid--maxwidth">
+        <nav class="row justify-content-between align-items-center">
+          <div class="col-12 col-sm-auto text-center text-sm-left">
+            <a class="brand" href="/">
+            <span>+ brio</span>
+            </a>
+          </div>
+          <div class="col-12 col-sm-auto text-center text-sm-left align-self-center pt-4 pt-sm-0">
+            {% assign currentUrl =  page.url %}
+            {% assign allPages = 'products,about,contact' | split: ',' %}
+            {% for item in allPages %}
+              {% assign leSlug = item | prepend: '/' | append: '/' %}
+              <a {% if currentUrl == leSlug %}aria-current="page" {% endif %}href="{{ leSlug }}"
+              class="menu-item menu-item--header{% if currentUrl == leSlug %} active{% endif %}">
+                {{ item }}
+              </a>
+            {%- endfor %}
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main role="main" class="site-main">
+      {{ content }}
+    </main>
+    <footer role="contentinfo" class="site-footer">
+      This site does not track you. Come and go as you please. Happy Trails!<br>
+      Last updated: {{ buildtime.time.formatted }}
+    </footer>
+  </body>
+</html>

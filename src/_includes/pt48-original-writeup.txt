@@ -1,0 +1,96 @@
+<img src="periodic/poster-pic-overview.jpg" />
+The poster is 18"W x 24"H and set in portrait orientation A NH native, I started
+hiking in the White Mountains when I was four years old. Even immediately after
+finishing hikes, I remember poring over maps and guidebooks, scouting the next
+adventure. I was hooked...still am. A soon-to-be dad, I want to foster the same
+sense of anticipation in my little one. Since my wife is a scientist, I thought
+it would be fun to extend the periodic table paradigm to peak-bagging. Little
+did I know just how darned hard that would be! Hard, huh?! Sounds like fun to
+me! You're absolutely right! Producing this was terrific fun. But, it was
+challenging too, especially when it came to walking the fine line between
+respecting the periodic paradigm and knowing when to deviate from it. I agonized
+so much that I ended up producing four or five alternate versions, all of which
+I ultimately walked away from...for now. Moreover, not all the data were as cut
+and dry as, say, elevation or rank by elevation. In some cases, I just had to
+make judgement calls, and I knew that might raise questions. Let me try to
+address some of the more obvious ones below.
+
+<h3 class="faq-q" id="symbols">
+  Why are the “mountain symbols” for North and Middle Tripyramid “Nt” and “Mt”?
+</h3>
+
+I assigned North Twin the “Tn” symbol, so obviously North Tripyramid would have
+to be different. Thus, I decided quite simply to flip the initials of both North
+and Middle Tripyramid. Admittedly, my symbol nomenclature is not as scientific
+or systematic as the real periodic table. I just went for an abbreviation that
+felt right.
+
+<img src="periodic/poster-pic-detail.jpg" />
+Colors correspond to White Mountain regions
+
+<h3 class="faq-q" id="difficulty">Difficulty ratings</h3>
+
+Such ratings are always going to be subjective&mdash;a given peak can be
+difficult one day and easy the next. So, I just did my level best to identify
+the generally difficult and generally moderate. Caveat emptor! One of the great
+things about doing the 4000s is realizing that what you think will be hard will
+sometimes be easy and what you think will be easy will quite often turn out to
+be dreadfully hard.
+<h3 class="faq-q" id="number-of-trails">Hey, pal, Cabot only has one trail!</h3>
+
+This is true. But it's also not true. I think there's a Frost poem to back me
+up: two trails converged in a wood, and I took them both. Seriously, I think
+this will be one of those stats that gets me in trouble, both with John Q.
+Public and friends who make trail signs. I'm
+<a
+  href="http://4.bp.blogspot.com/-T4wqPxuFIxI/Ub5a67RBwDI/AAAAAAAAImI/uLfOMdJhbZA/s1600/IMG_1448.JPG"
+  target="_blank"
+  >looking at you</a
+>, Doug Mayer.
+
+<img src="periodic/poster-pic-legend.jpg" />
+A close-up of the legend
+
+<h3 class="faq-q" id="summit-type">Summit type</h3>
+
+Another can of worms! If you cast your eyes to the legend, you'll note that I
+used the term “alpine” to characterize certain peaks, not “alpine zone” or
+“treeline” or even “exposed”. The reason I avoided “alpine zone” is that,
+<i>strictly speaking</i>, it only applies to the top seven summits in terms of
+height, as I understand it. From an experiential standpoint, that didn't feel
+right, given that some summits feel decidedly alpine (Moosilauke and Bondcliff,
+for instance). The term “treeline” seemed to be fraught with similar perils.
+Thus, I avoided it. Right up until the day before printing, I had settled on the
+word “exposed”, because it adequately described summits like South Kinsman,
+Garfield, and others where the summit area offers few places to hide from the
+elements. At the last minute, though, I balked, mainly because I felt like all
+peaks are “exposed” to some extent&mdash;hikers are exposed as soon as they step
+out of their homes, I suppose. So, basically what I'm saying is that I based
+that characterization on a sense of “meadow-iness”, which just didn't seem like
+a good word to put in a legend.
+
+<img src="periodic/poster-pic-bottom.jpg" />
+Another perspective on the legend
+
+<h3 class="faq-q" id="order">Elevations and list order</h3>
+
+The peaks on the poster are in a slightly different order than those on the
+official AMC White Mountain 4000-Footer list because I chose to use elevations
+from Brad Washburn's fantastic map entitled
+<cite>Mount Washington and the Heart of the Presidential Range</cite>, which is
+recognized as a “Herculean feat of precision” (Boston Globe). I'm a huge fan,
+having spent hours gazing at it!
+
+<h3 class="faq-q" id="checkbox">Why not a checkbox for bagged peaks?</h3>
+
+Because we
+<a href="/work/white-mountain-4000-footers-passport"
+  >designed a passport for that</a
+>.
+
+<h3 class="faq-q" id="errors">Errata</h3>
+
+Despite my attempts to be thorough, I'm sure I've made mistakes or oversights.
+If you catch any or want to share any observations, please send them via the
+form below. Connecting with other passionate outdoors-folk is always great fun!
+Thank you for taking an interest in the project!

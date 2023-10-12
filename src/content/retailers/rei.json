@@ -1,0 +1,39 @@
+{
+  "name": "REI",
+  "locations": [
+    {
+      "type": "physical",
+      "branch_name": "North Conway",
+      "street1": "",
+      "street2": null,
+      "city": "North Conway",
+      "state": "NH",
+      "postal_code": "",
+      "phone": "",
+      "store_url": "https://www.rei.com/stores/north-conway",
+      "products": [
+        "New Hampshire 52 With A View Passport",
+        "White Mountain 4000-Footers Passport",
+        "Periodic Table of White Mountain 4000-Footers"
+      ]
+    },
+    {
+      "type": "physical",
+      "branch_name": "Bedford",
+      "street1": "",
+      "street2": null,
+      "city": "Bedford",
+      "state": "NH",
+      "postal_code": "",
+      "phone": "",
+      "store_url": "https://www.rei.com/stores/bedford",
+      "products": [
+        "New Hampshire 52 With A View Passport",
+        "White Mountain 4000-Footers Passport",
+        "Periodic Table of White Mountain 4000-Footers",
+        "Topographic Fingerprints of the Four Thousand Footers",
+        "Undercast Approaches to the White Isles of New Hampshire"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+---
+permalink: "/products/index.html"
+title: "Products"
+---
+
+{% for product in products %}
+  {% if forloop.first %}
+    <dl>
+    {% endif %}
+    <dt>
+      <a href="/products/{{ product.title | slugify }}/">{{ product.title }}</a>
+    </dt>
+    <dd>
+      {{ product.meta_desc | markdownify }}
+    </dd>
+    {% if forloop.last %}
+    </dl>
+  {% endif %}
+{% endfor %}
+
+
+<h2 style="margin: 2rem 0 0;">Online Retailers</h2>
+<div style="margin:0;display:grid;grid-template-columns:repeat( auto-fit, minmax(250px, 1fr) );gap:15px 30px;">
+  {% assign onlineRetailers = retailersByType['online'].locations %}
+  {% for retailer in onlineRetailers %}
+    <dl style="margin-bottom:0">
+      <dt style="color:red">{{ retailer.name }}</dt>
+      <dd style="margin:0;">
+        <ul style="list-style: outside disc;margin:0;padding-left:1rem;">
+          {% for product in retailer.products %}
+            <li>{{ product.title }}</li>
+          {% endfor %}
+        </ul>
+      </dd>
+    </dl>
+  {% endfor %}
+</div>
+
+<h2 style="margin: 2rem 0 0;">Brick and Mortar Retailers (by State)</h2>
+{% assign physicalRetailersByState = retailersByType['physical'].locationsByState %}
+<dl>
+  {% assign customSortOrder = "NH" | split: " " %}
+  {% for state in customSortOrder %}
+    {% assign currentState = physicalRetailersByState | where: "state", state %}
+    <dt style="margin-bottom:0.5rem;color:red">{{ currentState[0].state | stateNames }}</dt>
+    <dd style="margin:0;display:grid;grid-template-columns:repeat( auto-fit, minmax(250px, 1fr) );gap:15px 30px;">
+      {% assign cityGroup = currentState[0].locations | group_by:"city" %}
+      {% for city in cityGroup %}
+        <dl>
+          <dt style="text-transform:uppercase;font-size:0.85rem;">{{ city.name }}</dt>
+          <dd style="margin:0;">
+            <ul style="list-style: outside disc;margin:0;padding-left:1rem;">
+              {% for location in city.items %}
+                <li>
+                  {{ location.name }}<br>
+                  {{ location.street1 }}, {% if location.street2 %}{{ location.street2 | append: ", " }}{% endif %}{{ location.city }}, {{ location.state }} {{ location.postal_code }}<br>
+                    {{ location.phone }} | {{ location.store_url }}
+                </li>
+              {% endfor %}
+            </ul>
+          </dd>
+        </dl>
+      {% endfor %}
+    </dd>
+  {% endfor %}
+</dl>
+<div style="margin:0;display:grid;grid-template-columns:repeat( auto-fit, minmax(250px, 1fr) );gap:15px 30px;">
+  {% assign customSortOrder = "MA ME NY CO" | split: " " %}
+  {% for state in customSortOrder %}
+    <dl>
+      {% assign currentState = physicalRetailersByState | where: "state", state %}
+      <dt style="margin-bottom:0.5rem;color:red">{{ currentState[0].state | stateNames }}</dt>
+      <dd style="margin:0;">
+        {% assign cityGroup = currentState[0].locations | group_by:"city" %}
+        {% for city in cityGroup %}
+          <dl>
+            <dt style="text-transform:uppercase;font-size:0.85rem;">{{ city.name }}</dt>
+            <dd style="margin:0;">
+              <ul style="list-style: outside disc;margin:0;padding-left:1rem;">
+                {% for location in city.items %}
+                  <li>
+                    {{ location.name }}<br>
+                    {{ location.street1 }}, {% if location.street2 %}{{ location.street2 | append: ", " }}{% endif %}{{ location.city }}, {{ location.state }} {{ location.postal_code }}<br>
+                      {{ location.phone }} | {{ location.store_url }}
+                  </li>
+                {% endfor %}
+              </ul>
+            </dd>
+          </dl>
+        {% endfor %}
+      </dd>
+    </dl>
+  {% endfor %}
+</div>

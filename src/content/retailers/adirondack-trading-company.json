@@ -1,0 +1,19 @@
+{
+  "name": "Adirondack Trading Company",
+  "locations": [
+    {
+      "type": "physical",
+      "branch_name": "",
+      "street1": "",
+      "street2": null,
+      "city": "Lake Placid",
+      "state": "NY",
+      "postal_code": "",
+      "phone": "",
+      "store_url": "",
+      "products": [
+        "Periodic Table of the / Tableau périodique des Adirondack 46"
+      ]
+    }
+  ]
+}

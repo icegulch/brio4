@@ -1,0 +1,18 @@
+---
+permalink: "/"
+---
+
+{% for product in products %}
+  {% if forloop.first %}
+    <ol>
+    {% endif %}
+    <li>
+      <h2>
+        <a href="/products/{{ product.title | slugify }}/">{{ product.title }}</a>
+      </h2>
+      {{ product.meta_desc | markdownify }}
+    </li>
+    {% if forloop.last %}
+    </ol>
+  {% endif %}
+{% endfor %}

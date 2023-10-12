@@ -1,0 +1,21 @@
+{
+  "name": "White Mountain Cafe",
+  "locations": [
+    {
+      "type": "physical",
+      "branch_name": "",
+      "street1": "",
+      "street2": null,
+      "city": "Gorham",
+      "state": "NH",
+      "postal_code": "",
+      "phone": "",
+      "store_url": "http://www.whitemountaincafe.com/",
+      "products": [
+        "New Hampshire 52 With A View Passport",
+        "White Mountain 4000-Footers Passport",
+        "Periodic Table of White Mountain 4000-Footers"
+      ]
+    }
+  ]
+}

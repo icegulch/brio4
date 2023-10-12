@@ -1,0 +1,82 @@
+{
+  "title": "Periodic Table of White Mountain 4000-Footers",
+  "order": 3,
+  "og_img": "og-periodic-table-of-white-mountain-4000-footers",
+  "meta_desc": "An 18&#8243; x 24&#8243; print that presents a wealth of data on the 48 New Hampshire 4000-foot peaks in a format similar to the Periodic Table of Elements.",
+  "specs": ["18\" x 24\"", "Offset", "Second Edition"],
+  "description": "Don't have time to pore over one of the many fine guidebooks on hiking the White Mountain 4000-Footers? This poster is here to help, distilling a wealth of data on the 48 New Hampshire 4000-foot peaks in a format similar to the Periodic Table of Elements. Given for each summit is a difficulty rating, elevation, elevation rank, # of trails at summit, view type, summit type, Federal designation, county location, land manager, region within the Whites, and more! Offset-printed on 80lb paper with an endurance gloss cover. A portion of this product's profits go directly to the [AMC Four Thousand Footer Club](http://www.amc4000footer.org/).",
+  "images": [
+    {
+      "public_id": "periodic-table-of-white-mountain-4000-footers",
+      "width": 1600,
+      "height": 1063,
+      "caption": ""
+    },
+    {
+      "public_id": "periodic-table-of-white-mountain-4000-footers-1",
+      "width": 1440,
+      "height": 1377,
+      "caption": ""
+    },
+    {
+      "public_id": "periodic-table-of-white-mountain-4000-footers-2",
+      "width": 1500,
+      "height": 1048,
+      "caption": ""
+    },
+    {
+      "public_id": "periodic-table-of-white-mountain-4000-footers-3",
+      "width": 2048,
+      "height": 1017,
+      "caption": ""
+    },
+    {
+      "public_id": "periodic-table-of-white-mountain-4000-footers-4",
+      "width": 1200,
+      "height": 1087,
+      "caption": ""
+    }
+  ],
+  "retailers": [
+    {
+      "name": "The Mountain Wanderer",
+      "url": "http://www.mountainwanderer.com/proddetail.php?prod=POS6"
+    },
+    {
+      "name": "Bondcliff Books",
+      "url": "https://www.bondcliffbooks.com/proddetail.php?prod=BRIO08182015-02"
+    },
+    {
+      "name": "Appalachian Mountain Club",
+      "url": "https://amcstore.outdoors.org/periodic-table-of-white-mountain-4000-footers-poster"
+    },
+    {
+      "name": "REI North Conway",
+      "url": "https://www.rei.com/stores/north-conway.html"
+    },
+    {
+      "name": "Museum of the White Mountains",
+      "url": "https://www.plymouth.edu/mwm/"
+    },
+    {
+      "name": "The Common Man Roadside",
+      "url": "https://thecmanroadside.com/common-man-roadside/"
+    },
+    {
+      "name": "Simply Sunflowers",
+      "url": "https://www.simplysunflowersnh.com/collections/gifts/products/periodic-table-of-the-white-mountains"
+    },
+    {
+      "name": "The Mill Store",
+      "url": "https://www.facebook.com/The-Mill-Store-Candy-Counter-and-Vintage-Goods-473831913370734/"
+    },
+    {
+      "name": "White Mountain Cafe",
+      "url": "http://www.whitemountaincafe.com/"
+    },
+    {
+      "name": "Pop of Color",
+      "url": "https://www.popofcolornh.com/"
+    }
+  ]
+}
