@@ -37,6 +37,7 @@ retailersData.forEach((retailer) => {
         state: state,
         postal_code: location.postal_code,
         phone: location.phone,
+        email: location.email,
         store_url: location.store_url,
         products: location.products,
       });
