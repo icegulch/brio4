@@ -31,6 +31,11 @@
     {% include "og.liquid" %}
     {% include "site_icons.liquid" %}
     <style>
+      *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
       {# include "css/site.css" #}
     </style>
     {% if site.env == 'production' %}
@@ -38,8 +43,8 @@
       <link rel="dns-prefetch" href="//res.cloudinary.com">
     {% endif %}
   </head>
-  <body>
-    <nav role="navigation" aria-label="Main" style="display:grid;grid-template-columns: auto auto;gap:30px;justify-content:space-between;">
+  <body style="height:100vh;display: grid;grid-template-areas: 'nav'  'main'  'foot';grid-template-rows: auto 1fr auto;gap:20px 0;">
+    <nav role="navigation" aria-label="Main" style="grid-area:nav;display:grid;grid-template-columns: auto auto;gap:30px;justify-content:space-between;">
       <div>
         <a class="brand" href="/">
           With Brio
@@ -57,10 +62,10 @@
         {%- endfor %}
       </div>
     </nav>
-    <main role="main" class="site-main">
+    <main role="main" class="site-main" style="grid-area:main">
       {{ content }}
     </main>
-    <footer role="contentinfo" class="site-footer">
+    <footer role="contentinfo" class="site-footer" style="grid-area:foot">
       This site does not track you. Come and go as you please. Happy Trails!<br>
       Last updated: {{ buildtime.time.formatted }}
     </footer>

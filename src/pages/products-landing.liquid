@@ -23,7 +23,7 @@ title: "Products"
     <dl style="margin-bottom:0">
       <dt style="color:red">{{ retailer.name }}</dt>
       <dd style="margin:0;">
-        <ul style="list-style: outside disc;margin:0;padding-left:1rem;">
+        <ul style="list-style: outside disc;margin:0;padding-left:1rem;font-size:0.95rem;">
           {% for product in retailer.products %}
             <li>{{ product.title }}</li>
           {% endfor %}
@@ -49,8 +49,9 @@ title: "Products"
             {% for location in city.items %}
               <address style="margin-top:0.5rem;font-style:normal">
                 {{ location.name }}<br>
-                {{ location.street1 }}, {% if location.street2 %}{{ location.street2 | append: ", " }}{% endif %}{{ location.city }}, {{ location.state }} {{ location.postal_code }}<br>
-                  Phone | Web | Email
+                {{ location.street1 }}, {% if location.street2 %}{{ location.street2 | append: ", " }}{% endif %}<br>
+                {{ location.city }}, {{ location.state }} {{ location.postal_code }}<br>
+                Phone | Web | Email
               </address>
             {% endfor %}
           </dd>
@@ -74,8 +75,9 @@ title: "Products"
                 {% for location in city.items %}
                   <address style="margin-top:0.5rem;font-style:normal">
                     {{ location.name }}<br>
-                    {{ location.street1 }}, {% if location.street2 %}{{ location.street2 | append: ", " }}{% endif %}{{ location.city }}, {{ location.state }} {{ location.postal_code }}<br>
-                      Phone | Web | Email
+                    {{ location.street1 }}, {% if location.street2 %}{{ location.street2 | append: ", " }}{% endif %}<br>
+                    {{ location.city }}, {{ location.state }} {{ location.postal_code }}<br>
+                    Phone | Web | Email
                   </address>
                 {% endfor %}
             </dd>
