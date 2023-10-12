@@ -44,10 +44,10 @@ title: "Products"
       {% assign cityGroup = currentState[0].locations | group_by:"city" %}
       {% for city in cityGroup %}
         <dl>
-          <dt style="text-transform:uppercase;font-size:0.85rem;">{{ city.name }}</dt>
+          <dt style="text-transform:uppercase;font-size:0.85rem;font-weight:bold">{{ city.name }}</dt>
           <dd style="margin:0;">
             {% for location in city.items %}
-              <address>
+              <address style="margin-top:0.5rem;font-style:normal">
                 {{ location.name }}<br>
                 {{ location.street1 }}, {% if location.street2 %}{{ location.street2 | append: ", " }}{% endif %}{{ location.city }}, {{ location.state }} {{ location.postal_code }}<br>
                   Phone | Web | Email
@@ -69,10 +69,10 @@ title: "Products"
         {% assign cityGroup = currentState[0].locations | group_by:"city" %}
         {% for city in cityGroup %}
           <dl>
-            <dt style="text-transform:uppercase;font-size:0.85rem;">{{ city.name }}</dt>
+            <dt style="text-transform:uppercase;font-size:0.85rem;font-weight:bold">{{ city.name }}</dt>
             <dd style="margin:0;">
                 {% for location in city.items %}
-                  <address>
+                  <address style="margin-top:0.5rem;font-style:normal">
                     {{ location.name }}<br>
                     {{ location.street1 }}, {% if location.street2 %}{{ location.street2 | append: ", " }}{% endif %}{{ location.city }}, {{ location.state }} {{ location.postal_code }}<br>
                       Phone | Web | Email
