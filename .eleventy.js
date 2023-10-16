@@ -1,38 +1,38 @@
 const util = require("util");
 
 module.exports = function (eleventyConfig) {
-
   eleventyConfig.addFilter("dump", (obj) => {
     return util.inspect(obj, { showHidden: false, depth: null, colors: false });
   });
 
-  // configure markdown-it (and set it as your markdown processor for consistency)
-  const md = require('markdown-it')({
+  const markdownIt = require("markdown-it");
+  const md = markdownIt({
     html: true,
     breaks: true,
     linkify: true,
   });
+  const markdownItAttrs = require("markdown-it-attrs");
+  md.use(markdownItAttrs);
 
-  eleventyConfig.setLibrary('md', md);
+  eleventyConfig.setLibrary("md", md);
+  eleventyConfig.addFilter("markdownify", (str) => md.render(str));
 
-  eleventyConfig.addFilter('markdownify', str => md.render(str));
+  eleventyConfig.addFilter("group_by", groupBy);
 
-  eleventyConfig.addFilter('group_by', groupBy)
-  
-  eleventyConfig.addFilter('stateNames', function (stateAbbr) {
+  eleventyConfig.addFilter("stateNames", function (stateAbbr) {
     const stateAbbreviationsToNames = {
-      CO: 'Colorado',
-      NH: 'New Hampshire',
-      VT: 'Vermont',
-      NY: 'New York',
-      MA: 'Massachusetts',
-      ME: 'Maine',
+      CO: "Colorado",
+      NH: "New Hampshire",
+      VT: "Vermont",
+      NY: "New York",
+      MA: "Massachusetts",
+      ME: "Maine",
       // Add more state mappings as needed
     };
 
     return stateAbbreviationsToNames[stateAbbr] || stateAbbr;
   });
-  
+
   return {
     dir: {
       input: "src",
