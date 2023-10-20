@@ -2,7 +2,6 @@
   "name": "Appalachian Mountain Club",
   "physical_locations": [
     {
-      "type": "physical",
       "branch_name": "Highland Center",
       "street1": "US-302",
       "street2": null,
@@ -19,7 +18,6 @@
       ]
     },
     {
-      "type": "physical",
       "branch_name": "Joe Dodge Lodge",
       "street1": "361 NH-16",
       "street2": null,

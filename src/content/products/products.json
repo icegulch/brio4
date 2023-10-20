@@ -1,0 +1,4 @@
+{
+  "layout": "base.liquid",
+  "permalink": "/products/{{ title | slugify }}/index.html"
+}

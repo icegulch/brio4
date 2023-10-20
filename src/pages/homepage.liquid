@@ -2,15 +2,16 @@
 permalink: "/"
 ---
 
-{% for product in products %}
+{% for product in collections.products %}
+<pre>{{ product.data.sku }}</pre>
   {% if forloop.first %}
     <ol>
     {% endif %}
     <li>
       <h2>
-        <a href="/products/{{ product.title | slugify }}/">{{ product.title }}</a>
+        <a href="/products/{{ product.data.title | slugify }}/">{{ product.data.title }}</a>
       </h2>
-      {{ product.meta_desc | markdownify }}
+      {{ product.data.meta_desc | markdownify }}
     </li>
     {% if forloop.last %}
     </ol>

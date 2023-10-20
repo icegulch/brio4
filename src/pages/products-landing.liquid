@@ -4,13 +4,13 @@ title: "Products"
 ---
 
 <div style="display:grid;grid-template-columns:repeat( auto-fit, minmax(250px, 1fr) );gap:15px 30px;">
-  {% for product in products %}
+  {% for product in collections.products %}
     <dl style="margin:0;">
       <dt>
-        <a href="/products/{{ product.title | slugify }}/">{{ product.title }}</a>
+        <a href="/products/{{ product.data.title | slugify }}/">{{ product.data.title }}</a>
       </dt>
       <dd style="margin:0;">
-        {{ product.meta_desc | markdownify }}
+        {{ product.data.meta_desc | markdownify }}
       </dd>
     </dl>
   {% endfor %}

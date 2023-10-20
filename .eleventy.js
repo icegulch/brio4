@@ -2,7 +2,11 @@ const util = require("util");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("dump", (obj) => {
-    return util.inspect(obj, { showHidden: false, depth: null, colors: false });
+    return util.inspect(obj, { showHidden: false, depth: 4, colors: false });
+  });
+
+  eleventyConfig.addCollection("products", function (collection) {
+    return collection.getFilteredByGlob("./src/content/products/*.md");
   });
 
   const markdownIt = require("markdown-it");
