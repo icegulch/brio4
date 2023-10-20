@@ -1,8 +1,7 @@
 {
   "name": "REI",
-  "locations": [
+  "physical_locations": [
     {
-      "type": "physical",
       "branch_name": "North Conway",
       "street1": "1498 White Mountain Hwy",
       "street2": "C30",
@@ -19,7 +18,6 @@
       ]
     },
     {
-      "type": "physical",
       "branch_name": "Bedford",
       "street1": "7 Market St",
       "street2": "Ste 1",

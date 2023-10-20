@@ -1,8 +1,7 @@
 {
   "name": "Queen City Cupcakes & Gift Shop",
-  "locations": [
+  "physical_locations": [
     {
-      "type": "physical",
       "branch_name": "",
       "street1": "816 Elm St",
       "street2": "Floor 1, The Beacon",

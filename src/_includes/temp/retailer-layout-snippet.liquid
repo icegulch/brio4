@@ -1,0 +1,77 @@
+<h2 style="margin: 2rem 0 0;">Wholesale & Our Retailers</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<h3 style="margin: 2rem 0 0;">Find Products Online</h3>
+<div style="margin:0;display:grid;grid-template-columns:repeat( auto-fit, minmax(250px, 1fr) );gap:15px 30px;">
+  {% assign onlineRetailers = retailersByType['online'].locations %}
+  {% for retailer in onlineRetailers %}
+    <dl style="margin-bottom:0">
+      <dt style="color:red">{{ retailer.name }}</dt>
+      <dd style="margin:0;">
+        <ul style="list-style: outside disc;margin:0;padding-left:1rem;font-size:0.95rem;">
+          {% for product in retailer.products %}
+            <li>{{ product.title }}</li>
+          {% endfor %}
+        </ul>
+      </dd>
+    </dl>
+  {% endfor %}
+</div>
+
+<h3 style="margin: 2rem 0 0;">Find Products in Stores</h3>
+{% assign physicalRetailersByState = retailersByType['physical'].locationsByState %}
+<dl>
+  {% assign customSortOrder = "NH" | split: " " %}
+  {% for state in customSortOrder %}
+    {% assign currentState = physicalRetailersByState | where: "state", state %}
+    <dt style="margin-bottom:0.5rem;color:red">{{ currentState[0].state | stateNames }}</dt>
+    <dd style="margin:0;display:grid;grid-template-columns:repeat( auto-fit, minmax(300px, 1fr) );gap:15px 50px;">
+      {% assign cityGroup = currentState[0].locations | group_by:"city" %}
+      {% for city in cityGroup %}
+        <dl>
+          <dt style="text-transform:uppercase;font-size:0.85rem;font-weight:bold">{{ city.name }}</dt>
+          <dd style="margin:0;">
+            {% for location in city.items %}
+              <address style="margin-top:0.5rem;font-style:normal">
+                {{ location.name }}<br>
+                {{ location.street1 }}, {% if location.street2 %}{{ location.street2 | append: ", " }}{% endif %}<br>
+                {{ location.city }}, {{ location.state }} {{ location.postal_code }}<br>
+                {% if location.phone %}<div>{{ location.phone }}</div>{% endif %}
+                {% if location.store_url %}<div>{{ location.store_url }}</div>{% endif %}
+                {% if location.email %}<div>{{ location.email }}</div>{% endif %}
+              </address>
+            {% endfor %}
+          </dd>
+        </dl>
+      {% endfor %}
+    </dd>
+  {% endfor %}
+</dl>
+<div style="margin:0;display:grid;grid-template-columns:repeat( auto-fit, minmax(300px, 1fr) );gap:15px 50px;">
+  {% assign customSortOrder = "MA ME NY CO" | split: " " %}
+  {% for state in customSortOrder %}
+    <dl>
+      {% assign currentState = physicalRetailersByState | where: "state", state %}
+      <dt style="margin-bottom:0.5rem;color:red">{{ currentState[0].state | stateNames }}</dt>
+      <dd style="margin:0;">
+        {% assign cityGroup = currentState[0].locations | group_by:"city" %}
+        {% for city in cityGroup %}
+          <dl>
+            <dt style="text-transform:uppercase;font-size:0.85rem;font-weight:bold">{{ city.name }}</dt>
+            <dd style="margin:0;">
+                {% for location in city.items %}
+                  <address style="margin-top:0.5rem;font-style:normal">
+                    {{ location.name }}<br>
+                    {{ location.street1 }}, {% if location.street2 %}{{ location.street2 | append: ", " }}{% endif %}<br>
+                    {{ location.city }}, {{ location.state }} {{ location.postal_code }}<br>
+                    {% if location.phone %}<div>{{ location.phone }}</div>{% endif %}
+                    {% if location.store_url %}<div>{{ location.store_url }}</div>{% endif %}
+                    {% if location.email %}<div>{{ location.email }}</div>{% endif %}
+                  </address>
+                {% endfor %}
+            </dd>
+          </dl>
+        {% endfor %}
+      </dd>
+    </dl>
+  {% endfor %}
+</div>

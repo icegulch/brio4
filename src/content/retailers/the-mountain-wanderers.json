@@ -1,8 +1,7 @@
 {
   "name": "The Mountain Wanderer",
-  "locations": [
+  "physical_locations": [
     {
-      "type": "physical",
       "branch_name": "",
       "street1": "PO Box 485",
       "street2": "Rt. 112",
@@ -20,23 +19,20 @@
         "Periodic Table of White Mountain 4000-Footers",
         "White Mountain 4000-Footers Passport"
       ]
+    }
+  ],
+  "ecommerce_products": [
+    {
+      "title": "New Hampshire 52 With A View Passport",
+      "url": "http://www.mountainwanderer.com/proddetail.php?prod=NHH52"
     },
     {
-      "type": "online",
-      "products": [
-        {
-          "title": "New Hampshire 52 With A View Passport",
-          "url": ""
-        },
-        {
-          "title": "White Mountain 4000-Footers Passport",
-          "url": ""
-        },
-        {
-          "title": "Periodic Table of White Mountain 4000-Footers",
-          "url": ""
-        }
-      ]
+      "title": "White Mountain 4000-Footers Passport",
+      "url": "http://www.mountainwanderer.com/proddetail.php?prod=NHH4000"
+    },
+    {
+      "title": "Periodic Table of White Mountain 4000-Footers",
+      "url": "http://www.mountainwanderer.com/proddetail.php?prod=POS6"
     }
   ]
 }

@@ -18,16 +18,7 @@ eleventyComputed:
 
 {{ product.description | markdownify }}
 
-{% for image in product.images %}
-  <img
-    src="{{ site.cloudinary_url }}{{ image.public_id }}"
-    width="{% unless image.width == 0 %}{{ image.width }}{% endunless %}"
-    height="{% unless image.height == 0 %}{{ image.height }}{% endunless %}"
-    alt="{{ image.caption }}"
-    loading="lazy">
-{% endfor %}
-
-{% for retailer in product.retailers %}
+{% comment %} {% for retailer in product.retailers %}
   {% if forloop.first %}
     <ul>
     {% endif %}
@@ -52,4 +43,4 @@ eleventyComputed:
     {% if forloop.last %}
     </ul>
   {% endif %}
-{% endfor %}
+{% endfor %} {% endcomment %}

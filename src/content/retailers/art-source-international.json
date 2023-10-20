@@ -1,17 +1,7 @@
 {
   "name": "Art Source International",
-  "locations": [
+  "physical_locations": [
     {
-      "type": "online",
-      "products": [
-        {
-          "title": "Periodic Table of the Fifty-Something Colorado Fourteeners",
-          "url": "https://artsourceinternational.com/shop/vintage-posters/periodic-table-of-the-fifty-something-colorado-fourteeners/"
-        }
-      ]
-    },
-    {
-      "type": "physical",
       "branch_name": "",
       "street1": "1237 Pearl Street",
       "street2": null,
@@ -24,6 +14,12 @@
       "products": [
         "Periodic Table of the Fifty-Something Colorado Fourteeners"
       ]
+    }
+  ],
+  "ecommerce_products": [
+    {
+      "title": "Periodic Table of the Fifty-Something Colorado Fourteeners",
+      "url": "https://artsourceinternational.com/shop/vintage-posters/periodic-table-of-the-fifty-something-colorado-fourteeners/"
     }
   ]
 }

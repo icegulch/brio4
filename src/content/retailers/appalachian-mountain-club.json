@@ -1,23 +1,6 @@
 {
   "name": "Appalachian Mountain Club",
-  "locations": [
-    {
-      "type": "online",
-      "products": [
-        {
-          "title": "New Hampshire 52 With A View Passport",
-          "url": "https://amcstore.outdoors.org/new-hampshire-52-with-a-view-passport-055169"
-        },
-        {
-          "title": "White Mountain 4000-Footers Passport",
-          "url": ""
-        },
-        {
-          "title": "Periodic Table of White Mountain 4000-Footers",
-          "url": ""
-        }
-      ]
-    },
+  "physical_locations": [
     {
       "type": "physical",
       "branch_name": "Highland Center",
@@ -51,6 +34,20 @@
         "White Mountain 4000-Footers Passport",
         "Periodic Table of White Mountain 4000-Footers"
       ]
+    }
+  ],
+  "ecommerce_products": [
+    {
+      "title": "New Hampshire 52 With A View Passport",
+      "url": "https://amcstore.outdoors.org/products/new-hampshire-52-with-a-view-passport-1"
+    },
+    {
+      "title": "White Mountain 4000-Footers Passport",
+      "url": "https://amcstore.outdoors.org/products/white-mountain-4-000-footer-passport-1"
+    },
+    {
+      "title": "Periodic Table of White Mountain 4000-Footers",
+      "url": "https://amcstore.outdoors.org/periodic-table-of-white-mountain-4000-footers-poster"
     }
   ]
 }

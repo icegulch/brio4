@@ -1,14 +1,10 @@
 {
   "name": "Circle Square Diamond",
-  "locations": [
+  "physical_locations": [],
+  "ecommerce_products": [
     {
-      "type": "online",
-      "products": [
-        {
-          "title": "Periodic Table of Ski Resorts",
-          "url": ""
-        }
-      ]
+      "title": "Periodic Table of Ski Resorts",
+      "url": "https://www.circlesquarediamond.com/collections/periodic-table-of-ski-resorts"
     }
   ]
 }

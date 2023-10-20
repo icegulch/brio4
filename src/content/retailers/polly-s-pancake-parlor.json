@@ -1,8 +1,7 @@
 {
   "name": "Polly's Pancake Parlor",
-  "locations": [
+  "physical_locations": [
     {
-      "type": "physical",
       "branch_name": "",
       "street1": "672 Sugar Hill Rd",
       "street2": null,
