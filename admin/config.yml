@@ -1,0 +1,27 @@
+---
+backend:
+  name: git-gateway
+  branch: main
+
+logo_url: https://res.cloudinary.com/car-talk-vehicle-donation-program/image/upload/v1674870469/ct-logo.svg
+show_preview_links: false
+
+media_folder: "src/images/" # Media files will be stored in the repo under static/images/
+public_folder: "/images/" # The src attribute for uploaded media will begin with /images/
+
+collections:
+  - name: retailers
+    label: Retailers
+    label_singular: Retailer
+    folder: src/content/retailers/
+    slug: "{{slug}}"
+    extension: md
+    format:
+    create: true # Allow users to create new documents in this collection
+    delete: true # Allow users to delete items in this collection
+    identifier_field: name
+    summary: "{{fields.name}}"
+    editor:
+      preview: false
+    fields: # The fields for each document, usually in front matter
+      - { label: "Name", name: "name", widget: "string" }

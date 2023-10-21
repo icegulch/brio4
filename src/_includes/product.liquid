@@ -1,0 +1,23 @@
+---
+layout: base.liquid
+---
+
+<h1>
+  {{ title }}
+</h1>
+
+{{ content }}
+
+<ul>
+  {% for retailer in retailersForProduct %}
+    <li>
+      <pre>
+        {{ retailer.name -}}
+        {%- unless retailer.storeLocations contains 'Online Only' %}
+          {{ retailer.storeLocations | join: " <span>&</span> " | prepend: ", "}}
+        {% endunless %}
+        {% unless retailer.productUrl == 'Not Offered Online' %}<a href="{{ retailer.productUrl }}">Available Online</a>{% endunless %}
+      </pre>
+    </li>
+  {% endfor %}
+</ul>

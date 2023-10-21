@@ -1,12 +1,63 @@
 const util = require("util");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addFilter("dump", (obj) => {
-    return util.inspect(obj, { showHidden: false, depth: 4, colors: false });
+
+  eleventyConfig.addFilter("dump", (value, depth = 2) => {
+  //   return liquid.filters.json(value, depth);
+    return util.inspect(value, { showHidden: false, depth: depth, colors: false });
   });
 
   eleventyConfig.addCollection("products", function (collection) {
     return collection.getFilteredByGlob("./src/content/products/*.md");
+  });
+  
+  eleventyConfig.addCollection("retailers", function (collection) {
+    return collection.getFilteredByGlob("./src/content/retailers/*.md");
+  });
+
+  eleventyConfig.addCollection("physicalRetailStores", function (collection) {
+    const retailers = collection.getFilteredByGlob("./src/content/retailers/*.md");
+
+    const physicalRetailStores = [];
+    
+    retailers.forEach((retailer) => {
+      if (retailer.data.physical_locations) {
+        retailer.data.physical_locations.forEach((location) => {
+          const storeName = location.branch_name
+            ? `${retailer.data.name} - ${location.branch_name}`
+            : retailer.data.name;
+
+          physicalRetailStores.push({
+            name: storeName,
+            street1: location.street1 || '',
+            street2: location.street2 || '',
+            city: location.city || '',
+            state: location.state || '',
+            postal_code: location.postal_code || '',
+            phone: location.phone || '',
+            email: location.email || '',
+            store_url: location.store_url || '',
+            products: location.products || [],
+          });
+        });
+      } else {
+        // Handle the case when physical_locations is missing or empty
+        physicalRetailStores.push({
+          name: retailer.data.name,
+          street1: '',
+          street2: '',
+          city: '',
+          state: '',
+          postal_code: '',
+          phone: '',
+          email: '',
+          store_url: '',
+          products: [],
+        });
+      }
+    });
+
+    return physicalRetailStores;
   });
 
   const markdownIt = require("markdown-it");
@@ -22,6 +73,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("markdownify", (str) => md.render(str));
 
   eleventyConfig.addFilter("group_by", groupBy);
+
+  eleventyConfig.addFilter("excludeByField", (array, field, value) => {
+    return array.filter(item => item[field] !== value);
+  });
 
   eleventyConfig.addFilter("stateNames", function (stateAbbr) {
     const stateAbbreviationsToNames = {

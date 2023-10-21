@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Content Manager</title>
+    <style>
+      .css-15mesr9-IconWrapper-NetlifyCreditIcon {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Include the script that builds the page and powers Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              window.location.reload(); //force refresh, which will show admin screen
+            });
+          }
+        });
+      }
+    </script>
+
+    <script>
+      var ArrayControl = createClass({
+        handleChange: function (e) {
+          const separator = this.props.field.get("separator", ", ");
+          this.props.onChange(e.target.value.split(separator));
+        },
+
+        render: function () {
+          const separator = this.props.field.get("separator", ", ");
+          var value = this.props.value;
+          return h("input", {
+            id: this.props.forID,
+            className: this.props.classNameWrapper,
+            type: "text",
+            value: value ? value.join(separator) : "",
+            onChange: this.handleChange,
+          });
+        },
+      });
+
+      var ArrayPreview = createClass({
+        render: function () {
+          return h(
+            "ul",
+            {},
+            this.props.value.map(function (val, index) {
+              return h("li", { key: index }, val);
+            })
+          );
+        },
+      });
+
+      var schema = {
+        properties: {
+          separator: { type: "string" },
+        },
+      };
+    </script>
+
+    <script>
+      CMS.registerWidget("array", ArrayControl, ArrayPreview, schema);
+      CMS.registerEventListener({
+        name: "preSave",
+        handler: ({ entry }) => {
+          const timeStamp = new Date().toISOString();
+          return entry.get("data").set("last_modified", timeStamp);
+        },
+      });
+    </script>
+  </body>
+</html>
