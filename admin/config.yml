@@ -33,7 +33,7 @@ collections:
         collapsed: false
         minimize_collapsed: false
         allow_add: true
-        summary: "{{fields.name}}"
+        summary: "{{fields.street1}}, {{fields.city}}, {{fields.state}}"
         fields:
           - label: Branch Name
             name: branch_name
