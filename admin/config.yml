@@ -16,7 +16,6 @@ collections:
     folder: src/content/retailers/
     slug: "{{slug}}"
     extension: md
-    format:
     create: true # Allow users to create new documents in this collection
     delete: true # Allow users to delete items in this collection
     identifier_field: name
