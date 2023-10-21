@@ -31,7 +31,7 @@ collections:
         name: physical_locations
         widget: list
         collapsed: false
-        minimize_collapsed: false
+        minimize_collapsed: true
         allow_add: true
         summary: "{{fields.street1}}, {{fields.city}}, {{fields.state}}"
         fields:
