@@ -23,4 +23,81 @@ collections:
     editor:
       preview: false
     fields: # The fields for each document, usually in front matter
-      - { label: "Name", name: "name", widget: "string" }
+      - label: "Name"
+        name: "name"
+        widget: "string"
+      - label: Brick and Mortar Stores
+        label_singular: Store
+        name: physical_locations
+        widget: list
+        collapsed: false
+        minimize_collapsed: false
+        allow_add: true
+        summary: "{{fields.name}}"
+        fields:
+          - label: Branch Name
+            name: branch_name
+            widget: string
+            hint: If the retailer has multiple locations, what branch is this (e.g., for REI, it would be 'North Conway' or 'Bedford'). Leave blank if there's only one store
+          - label: Street 1
+            name: street1
+            widget: string
+            required: true
+          - label: Street 2
+            name: street2
+            widget: string
+            required: false
+          - label: City
+            name: city
+            widget: string
+            required: true
+          - label: State
+            name: state
+            widget: string
+            required: true
+          - label: Zip Code
+            name: postal_code
+            widget: string
+            required: true
+          - label: Phone
+            name: phone
+            widget: string
+            required: false
+          - label: Email
+            name: email
+            widget: string
+            required: false
+          - label: Store URL
+            name: store_url
+            widget: string
+            required: false
+          - label: Products Carried
+            name: products
+            widget: relation
+            collection: products
+            search_fields: ["title"]
+            value_field: "title"
+            display_fields: ["title"]
+            multiple: true
+            required: true
+            min: 1
+
+      # - label: Address
+      #   name: address
+      #   widget: object
+      #   collapsed: true
+      #   summary: "{{fields.address1}}"
+      #   required: true
+      #   fields:
+      #     - { label: Title, name: title, widget: string, required: true }
+      #     - { label: Address1, name: address1, widget: string, required: true }
+      #     - { label: Address2, name: address2, widget: string, required: false }
+      #     - { label: City, name: city, widget: string, required: true }
+      #     - { label: State, name: state, widget: string, required: true }
+      #     - { label: Zip Code, name: zip_code, widget: string, required: true }
+      #     - { label: Phone, name: phone, widget: string, required: false }
+
+      # - label: List of Cities
+      #   name: list_of_cities
+      #   widget: array
+      #   allow_add: true
