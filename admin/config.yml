@@ -39,6 +39,7 @@ collections:
             name: branch_name
             widget: string
             hint: If the retailer has multiple locations, what branch is this (e.g., for REI, it would be 'North Conway' or 'Bedford'). Leave blank if there's only one store
+            required: false
           - label: Street 1
             name: street1
             widget: string
