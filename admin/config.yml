@@ -96,7 +96,7 @@ collections:
             search_fields: ["title"]
             value_field: "title"
             display_fields: ["title"]
-            multiple: true
+            multiple: false
             required: true
             min: 1
             max: 1
