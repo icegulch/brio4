@@ -147,7 +147,7 @@ collections:
     label: Guides
     label_singular: Guide
     folder: src/content/guides/
-    path: "{{slug}}"
+    path: "{{fields.year}}"
     slug: "{{slug}}"
     extension: json
     create: true # Allow users to create new documents in this collection
