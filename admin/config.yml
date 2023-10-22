@@ -81,6 +81,29 @@ collections:
             multiple: true
             required: true
             min: 1
+      - label: Online Products
+        label_singular: Product
+        name: online_products
+        widget: list
+        collapsed: true
+        minimize_collapsed: false
+        allow_add: true
+        fields:
+          - label: Product Title
+            name: title
+            widget: relation
+            collection: products
+            search_fields: ["title"]
+            value_field: "title"
+            display_fields: ["title"]
+            multiple: true
+            required: true
+            min: 1
+            max: 1
+          - label: Product URL
+            name: url
+            widget: string
+            required: true
 
   - name: products
     label: Products
