@@ -11,6 +11,7 @@ specs:
   - Screen Printed
 last_modified: 2023-10-22T00:54:19.022Z
 ---
+
 Reminiscent of vintage scientific identification posters, this print challenges you to become familiar with the topographic "fingerprints" of all of New Hampshire's 4000-Footers. Adapted from the USGS "US Topo" series contour lines, the fingerprints are foil stamped in silver matte on 100# Neenah Classic Crest "patriot blue" paper. Since summits vary greatly in size, creative license was invoked in fitting each peak into a grid. Indeed, many summit shapes were reduced in size, with contour lines pruned in as systematic a way as possible. In two cases (Lincoln and Wildcat B), contours were added to give a better sense of those two summits' shapes. A portion of this product's profits go directly to the [AMC Four Thousand Footer Club](http://www.amc4000footer.org/).
 
 ![Fingerprints closeup middle](https://res.cloudinary.com/withbrio/f_auto/topographic-fingerprints-of-the-four-thousand-footers){width=1600 height=1068 loading=lazy}
