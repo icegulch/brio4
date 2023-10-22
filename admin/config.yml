@@ -137,3 +137,7 @@ collections:
         widget: array
         hint: Dimensions, printing process, etc
         allow_add: true
+      - label: Description
+        name: body
+        widget: markdown
+        hint: Dimensions, printing process, etc
