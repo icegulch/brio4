@@ -147,11 +147,11 @@ collections:
     label: Guides
     label_singular: Guide
     folder: src/content/guides/
-    path: "{{fields.year}}"
-    slug: "{{slug}}"
+    path: "{{fields.year}}/{{slug}}"
     extension: json
     create: true # Allow users to create new documents in this collection
     delete: true # Allow users to delete items in this collection
+    identifier_field: year
     editor:
       preview: false
     fields: # The fields for each document, usually in front matter
@@ -162,9 +162,8 @@ collections:
   - name: supplements
     label: Supplements
     label_singular: Supplement
-    folder: src/content/
-    path: "guides/{{fields.year}}"
-    slug: "{{slug}}"
+    folder: src/content/guides/
+    path: "{{fields.year}}/{{slug}}"
     extension: md
     create: true # Allow users to create new documents in this collection
     delete: true # Allow users to delete items in this collection
