@@ -162,8 +162,8 @@ collections:
   - name: supplements
     label: Supplements
     label_singular: Supplement
-    folder: src/content/guides/
-    path: "{{fields.year}}"
+    folder: src/content/
+    path: "guides/{{fields.year}}"
     slug: "{{slug}}"
     extension: md
     create: true # Allow users to create new documents in this collection
