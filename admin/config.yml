@@ -82,20 +82,23 @@ collections:
             required: true
             min: 1
 
-      # - label: Address
-      #   name: address
-      #   widget: object
-      #   collapsed: true
-      #   summary: "{{fields.address1}}"
-      #   required: true
-      #   fields:
-      #     - { label: Title, name: title, widget: string, required: true }
-      #     - { label: Address1, name: address1, widget: string, required: true }
-      #     - { label: Address2, name: address2, widget: string, required: false }
-      #     - { label: City, name: city, widget: string, required: true }
-      #     - { label: State, name: state, widget: string, required: true }
-      #     - { label: Zip Code, name: zip_code, widget: string, required: true }
-      #     - { label: Phone, name: phone, widget: string, required: false }
+  - name: products
+    label: Products
+    label_singular: Product
+    folder: src/content/products/
+    slug: "{{sku}}"
+    extension: md
+    create: true # Allow users to create new documents in this collection
+    delete: true # Allow users to delete items in this collection
+    editor:
+      preview: false
+    fields: # The fields for each document, usually in front matter
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "SKU"
+        name: "sku"
+        widget: "string"
 
       # - label: List of Cities
       #   name: list_of_cities
