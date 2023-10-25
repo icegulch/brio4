@@ -108,8 +108,8 @@ collections:
     sortable_fields: ["commit_date", "name"]
     view_filters:
       - label: Online Products?
-        field: online_products
-        pattern: true
+        field: online_products.title
+        pattern: "New Hampshire 52 With A View Passport"
 
   - name: products
     label: Products
