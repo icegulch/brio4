@@ -182,8 +182,8 @@ collections:
         label: Guide Version
         widget: hidden
         default: "2019"
-      - name: description
-        label: Description
+      - name: body
+        label: Body
         widget: markdown
 
   - name: "2007"
@@ -202,8 +202,8 @@ collections:
         label: Guide Version
         widget: hidden
         default: "2007"
-      - name: description
-        label: Description
+      - name: body
+        label: Body
         widget: markdown
 
 
