@@ -14,10 +14,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("retailers", function (collection) {
     return collection.getFilteredByGlob("./src/content/retailers/*.md");
   });
-  
-  eleventyConfig.addCollection("guides", function (collection) {
-    return collection.getFilteredByGlob("./src/content/guides/*.md");
-  });
 
   eleventyConfig.addCollection("physicalRetailStores", function (collection) {
     const retailers = collection.getFilteredByGlob("./src/content/retailers/*.md");
