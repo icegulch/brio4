@@ -148,21 +148,12 @@ collections:
         widget: markdown
         hint: Dimensions, printing process, etc
 
-  - name: settings
-    label: Settings
-    files:
-      - name: guides
-        label: Guide Versions
-        file: 'src/_data/guides.json'
-        fields:
-          - { name: 'key', label: 'Key', widget: 'string' }
-          - { name: 'value', label: 'Value', widget: 'string' }
-
   - name: guides
     label: Guides
     label_singular: Guide
     folder: src/content/guides/
-    extension: md
+    path: "src/content/guides/{% raw %}{{slug}}{% endraw %}/{% raw %}{{slug}}{% endraw %}.json"
+    extension: json
     create: true # Allow users to create new documents in this collection
     delete: true # Allow users to delete items in this collection
     editor:
@@ -174,10 +165,9 @@ collections:
       - label: Body
         name: body
         widget: markdown
-
 {% for guide in collections.guides %}
   - name: "{{guide.data.title | slugify}}"
-    label: {{guide.data.title}} Guide Supplements
+    label: {{guide.data.title}} Supplements
     folder: src/content/guides/{{guide.data.title | slugify}}/
     extension: md
     create: true # Allow users to create new documents in this collection
@@ -189,4 +179,3 @@ collections:
         name: title
         widget: string
 {% endfor %}
-

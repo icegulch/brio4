@@ -143,21 +143,12 @@ collections:
         widget: markdown
         hint: Dimensions, printing process, etc
 
-  - name: settings
-    label: Settings
-    files:
-      - name: guides
-        label: Guide Versions
-        file: 'src/_data/guides.json'
-        fields:
-          - { name: 'key', label: 'Key', widget: 'string' }
-          - { name: 'value', label: 'Value', widget: 'string' }
-
   - name: guides
     label: Guides
     label_singular: Guide
     folder: src/content/guides/
-    extension: md
+    path: "src/content/guides/{{slug}}/{{slug}}.json"
+    extension: json
     create: true # Allow users to create new documents in this collection
     delete: true # Allow users to delete items in this collection
     editor:
@@ -170,9 +161,8 @@ collections:
         name: body
         widget: markdown
 
-
   - name: "2019"
-    label: 2019 Guide Supplements
+    label: 2019 Supplements
     folder: src/content/guides/2019/
     extension: md
     create: true # Allow users to create new documents in this collection
@@ -185,7 +175,7 @@ collections:
         widget: string
 
   - name: "2008"
-    label: 2008 Guide Supplements
+    label: 2008 Supplements
     folder: src/content/guides/2008/
     extension: md
     create: true # Allow users to create new documents in this collection
@@ -198,7 +188,7 @@ collections:
         widget: string
 
   - name: "2016"
-    label: 2016 Guide Supplements
+    label: 2016 Supplements
     folder: src/content/guides/2016/
     extension: md
     create: true # Allow users to create new documents in this collection
@@ -209,5 +199,3 @@ collections:
       - label: Title
         name: title
         widget: string
-
-
