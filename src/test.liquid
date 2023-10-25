@@ -1,4 +1,9 @@
 ---
+layout: false
+permalink: admin/config.yml
+permalinkBypassOutputDir: true
+---
+---
 backend:
   name: git-gateway
   branch: main
@@ -14,12 +19,12 @@ collections:
     label: Retailers
     label_singular: Retailer
     folder: src/content/retailers/
-    slug: ""
+    slug: "{{slug}}"
     extension: md
     create: true # Allow users to create new documents in this collection
     delete: true # Allow users to delete items in this collection
     identifier_field: name
-    summary: ""
+    summary: "{{fields.name}}"
     editor:
       preview: false
     fields: # The fields for each document, usually in front matter
@@ -33,7 +38,7 @@ collections:
         collapsed: true
         minimize_collapsed: false
         allow_add: true
-        summary: ", "
+        summary: "{{fields.city}}, {{fields.state}}"
         fields:
           - label: Branch Name
             name: branch_name
@@ -110,7 +115,7 @@ collections:
     label: Products
     label_singular: Product
     folder: src/content/products/
-    slug: ""
+    slug: "{{sku}}"
     extension: md
     create: true # Allow users to create new documents in this collection
     delete: true # Allow users to delete items in this collection
@@ -170,10 +175,10 @@ collections:
         name: body
         widget: markdown
 
-
-  - name: "2019"
-    label: 2019 Guide Supplements
-    folder: src/content/guides/2019/
+{% for guide in collections.guides %}
+  - name: "{{guide.data.title | slugify}}"
+    label: {{guide.data.title}} Guide Supplements
+    folder: src/content/guides/{{guide.data.title | slugify}}/
     extension: md
     create: true # Allow users to create new documents in this collection
     delete: true # Allow users to delete items in this collection
@@ -183,18 +188,5 @@ collections:
       - label: Title
         name: title
         widget: string
-
-  - name: "2008"
-    label: 2008 Guide Supplements
-    folder: src/content/guides/2008/
-    extension: md
-    create: true # Allow users to create new documents in this collection
-    delete: true # Allow users to delete items in this collection
-    editor:
-      preview: false
-    fields: # The fields for each document, usually in front matter
-      - label: Title
-        name: title
-        widget: string
-
+{% endfor %}
 
