@@ -143,59 +143,27 @@ collections:
         widget: markdown
         hint: Dimensions, printing process, etc
 
-  - name: guides
-    label: Guides
-    label_singular: Guide
-    folder: src/content/guides/
-    path: "src/content/guides/{{slug}}/{{slug}}.json"
-    extension: json
-    create: true # Allow users to create new documents in this collection
-    delete: true # Allow users to delete items in this collection
-    editor:
-      preview: false
-    fields: # The fields for each document, usually in front matter
-      - label: Title
-        name: title
-        widget: string
-      - label: Body
-        name: body
-        widget: markdown
+  - name: settings
+    label: Guide Settings
+    files:
+      - name: guides
+        label: Guide Versions
+        file: src/content/guides/guides.json
+        fields:
+          - label: Versions
+            label_singular: Version
+            name: versions
+            widget: list
+            collapsed: true
+            minimize_collapsed: false
+            allow_add: true
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Body
+                name: body
+                widget: markdown
 
-  - name: "2019"
-    label: 2019 Supplements
-    folder: src/content/guides/2019/
-    extension: md
-    create: true # Allow users to create new documents in this collection
-    delete: true # Allow users to delete items in this collection
-    editor:
-      preview: false
-    fields: # The fields for each document, usually in front matter
-      - label: Title
-        name: title
-        widget: string
 
-  - name: "2008"
-    label: 2008 Supplements
-    folder: src/content/guides/2008/
-    extension: md
-    create: true # Allow users to create new documents in this collection
-    delete: true # Allow users to delete items in this collection
-    editor:
-      preview: false
-    fields: # The fields for each document, usually in front matter
-      - label: Title
-        name: title
-        widget: string
 
-  - name: "2016"
-    label: 2016 Supplements
-    folder: src/content/guides/2016/
-    extension: md
-    create: true # Allow users to create new documents in this collection
-    delete: true # Allow users to delete items in this collection
-    editor:
-      preview: false
-    fields: # The fields for each document, usually in front matter
-      - label: Title
-        name: title
-        widget: string
