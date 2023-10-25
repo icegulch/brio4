@@ -167,7 +167,7 @@ collections:
 
 
   - name: "2019"
-    label: 2019 Guide Supplements
+    label: 2019 Supplements
     folder: src/content/guides/2019/
     extension: md
     create: true # Allow users to create new documents in this collection
@@ -187,7 +187,7 @@ collections:
         widget: markdown
 
   - name: "2007"
-    label: 2007 Guide Supplements
+    label: 2007 Supplements
     folder: src/content/guides/2007/
     extension: md
     create: true # Allow users to create new documents in this collection
