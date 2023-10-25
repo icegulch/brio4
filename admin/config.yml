@@ -105,6 +105,7 @@ collections:
             name: url
             widget: string
             required: true
+    sortable_fields: ["commit_date", "name", "commit_author"]
 
   - name: products
     label: Products
@@ -142,3 +143,4 @@ collections:
         name: body
         widget: markdown
         hint: Dimensions, printing process, etc
+    sortable_fields: ["commit_date", "title", "commit_author"]
