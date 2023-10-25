@@ -173,6 +173,7 @@ collections:
 {% for version in guides.versions %}
   - name: "{{version.title | slugify}}"
     label: {{version.title}} Supplements
+    label_singular: {{version.title}} Supplement
     folder: src/content/guides/{{version.title | slugify}}/
     extension: md
     create: true # Allow users to create new documents in this collection

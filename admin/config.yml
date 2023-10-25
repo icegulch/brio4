@@ -168,6 +168,7 @@ collections:
 
   - name: "2019"
     label: 2019 Supplements
+    label_singular: 2019 Supplement
     folder: src/content/guides/2019/
     extension: md
     create: true # Allow users to create new documents in this collection
@@ -188,6 +189,7 @@ collections:
 
   - name: "2007"
     label: 2007 Supplements
+    label_singular: 2007 Supplement
     folder: src/content/guides/2007/
     extension: md
     create: true # Allow users to create new documents in this collection
