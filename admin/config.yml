@@ -178,6 +178,30 @@ collections:
       - label: Title
         name: title
         widget: string
+      - name: guide
+        label: Guide Version
+        widget: hidden
+        default: "2019"
+      - name: description
+        label: Description
+        widget: markdown
+
+  - name: "2007"
+    label: 2007 Guide Supplements
+    folder: src/content/guides/2007/
+    extension: md
+    create: true # Allow users to create new documents in this collection
+    delete: true # Allow users to delete items in this collection
+    editor:
+      preview: false
+    fields: # The fields for each document, usually in front matter
+      - label: Title
+        name: title
+        widget: string
+      - name: guide
+        label: Guide Version
+        widget: hidden
+        default: "2007"
       - name: description
         label: Description
         widget: markdown
