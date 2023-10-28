@@ -14,7 +14,7 @@ layout: base.liquid
       <pre>
         {{ retailer.name -}}
         {%- unless retailer.storeLocations contains 'Online Only' %}
-          {{ retailer.storeLocations | join: " <span>&</span> " | prepend: ", "}}
+          {{ retailer.storeLocations | dump }}
         {% endunless %}
         {% unless retailer.productUrl == 'Not Offered Online' %}<a href="{{ retailer.productUrl }}">Available Online</a>{% endunless %}
       </pre>

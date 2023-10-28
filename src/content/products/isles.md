@@ -1,7 +1,7 @@
 ---
 title: Undercast Approaches to the White Isles of New Hampshire
 sku: isles
-og_img: og-undercast-approaches-to-the-white-islands-of-new-hampshire
+cover: undercast-approaches-to-the-white-islands-of-new-hampshire-cover
 meta_desc: On those magical "undercast" days, when clouds settle in
   valleys and summits peek out above, you might find the landscape more nautical
   than orographic. This print runs with that concept, assuming clouds have

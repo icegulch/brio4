@@ -1,7 +1,7 @@
 ---
 title: Periodic Table of Ski Resorts
 sku: pt-ski
-og_img: og-periodic-table-of-ski-resorts
+cover: periodic-table-of-ski-resorts-cover
 meta_desc: The Periodic Table of Ski Resorts brings a data-oriented approach to
   different ski regions by packing extensive detail about each resort into a 18"
   x 24" poster.

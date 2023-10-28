@@ -1,18 +1,25 @@
 ---
 permalink: "/"
+title: "Obsessing about the Outdoors"
 ---
 
-{% for product in collections.products %}
-  {% if forloop.first %}
-    <ol>
-    {% endif %}
-    <li>
-      <h2>
-        <a href="/products/{{ product.data.title | slugify }}/">{{ product.data.title }}</a>
-      </h2>
-      {{ product.data.meta_desc | markdownify }}
-    </li>
-    {% if forloop.last %}
-    </ol>
-  {% endif %}
-{% endfor %}
+<section class="section section--feature">
+  <div>
+    {% assign customSortOrder = "wm48 nh52 pt48 fing pt-adk pt-ski pt14 isles" | split: " " %}
+    {% assign allProducts = collections.products %}
+    {% for sku in customSortOrder %}
+      {% assign currentProduct = allProducts | where: "data.sku", sku %}
+      <figure class="card">
+          <img src="{{ site.cloudinary_url }}c_fill,g_center,w_600,h_400/{{ currentProduct[0].data.cover }}.png">
+          <figcaption>
+            <h2>
+              <a href="/products/{{ currentProduct[0].data.title | slugify }}/">
+                {{ currentProduct[0].data.title }}
+              </a>
+            </h2>
+            {% comment %} {{ product.data.meta_desc | markdownify }} {% endcomment %}
+          </figcaption>
+        </figure>
+    {% endfor %}
+  </div>
+</section>
