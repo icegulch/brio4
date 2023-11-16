@@ -13,44 +13,36 @@ title: "Contact"
     <label>Don’t fill this out: <input name="fu"></label>
   </div>
   <div class="form-field">
-    <label class="form-label">
-      First Name
+    <label for="name" class="form-label">
+      Name
     </label>
     <input
+      id="name"
       class="form-control"
       type="text"
-      name="first_name">
+      name="name">
   </div>
   <div class="form-field">
-    <label class="form-label">
-      Last Name
-    </label>
-    <input
-      class="form-control"
-      type="text"
-      name="last_name">
-  </div>
-  <div class="form-field">
-    <label class="form-label">
+    <label for="email" class="form-label">
       Email
     </label>
     <input
+      id="email"
       class="form-control"
       type="email"
       name="email">
   </div>
   <div class="form-field">
-    <label class="form-label">
+    <label for="message" class="form-label">
       Your message
     </label>
     <textarea
+      id="message"
       class="form-control"
       name="message"
       rows="10"></textarea>
   </div>
-  <div class="form-field form-field-submit">
-    <button class="button-submit">
-      Send
-    </button>
-  </div>
+  <button class="button-submit">
+    Send
+  </button>
 </form>

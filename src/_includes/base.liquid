@@ -46,7 +46,7 @@
           <path id="plus" d="M177.7 82.3H131V35.5H82.3v46.8H35.5V131h46.8v46.7H131V131h46.7z"/>
         </svg>
       </a>
-      <div class="main-nav">
+      <div class="header-nav">
         {% assign currentUrl =  page.url %}
         {% assign allPages = 'products,contact' | split: ',' %}
         {% for item in allPages %}
@@ -59,6 +59,16 @@
       </div>
     </nav>
     <main class="site-main" role="main">
+      <header class="page-header">
+        <h1>
+          {{ title }}
+        </h1>
+        <ul>
+          <li>foo</li>
+          <li>bar</li>
+          <li>wah</li>
+        </ul>
+      </header>
       {{ content }}
     </main>
     <footer class="site-footer" role="contentinfo">
