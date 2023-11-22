@@ -82,8 +82,12 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("group_by", groupBy);
 
-  eleventyConfig.addFilter("excludeByField", (array, field, value) => {
+  eleventyConfig.addFilter("excludeByMatchingValue", (array, field, value) => {
     return array.filter(item => item[field] !== value);
+  });
+
+  eleventyConfig.addFilter("excludeByMatchingDataValue", (array, field, value) => {
+    return array.filter(item => item.data[field] !== value);
   });
 
   eleventyConfig.addFilter("stateNames", function (stateAbbr) {

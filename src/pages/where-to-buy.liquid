@@ -77,7 +77,7 @@ subtitle: Wholesale & Retailers
   </div>
 </section>
 
-{% assign otherRetailers = collections.physicalRetailStores | excludeByField: "state", "NH" %}
+{% assign otherRetailers = collections.physicalRetailStores | excludeByMatchingValue: "state", "NH" %}
 {% assign customSortOrder = "MA ME NY CO" | split: " " %}
 {% for state in customSortOrder %}
   <section class="section">

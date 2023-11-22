@@ -11,7 +11,7 @@ layout: base.liquid
     <dt>Available at</dt>
     {% for retailer in retailersForProduct %}
       <dd class="product--footer__retailers">
-        {{ retailer.name -}}
+        {{ retailer.name }} 
        [{%- unless retailer.storeLocations contains 'Online Only' %}
           <a href="/where-to-buy/">
             In Store
@@ -24,8 +24,8 @@ layout: base.liquid
     {% endfor %}
   </dl>
   <dl>
-    <dt>You might also like</dt>
-    {% assign remainingProducts = collections.products | excludeByField: "data.sku", "sku" | sort: "data.title" %}
+    <dt>You might also like:</dt>
+    {% assign remainingProducts = collections.products | excludeByMatchingDataValue: "sku", sku | sort: "data.title" %}
     {% for product in remainingProducts %}
       <dd>
         <a href="{{ product.url }}">
