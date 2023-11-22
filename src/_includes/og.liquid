@@ -1,5 +1,5 @@
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:url" content="{{ site.domain }}{{ page.url }}">
 <meta property="og:title" content="{% unless page.fileSlug == 'homepage' or title.length == 0 %}{{ title }} | {% endunless %}{{ site.title }}">
-<meta property="og:description" content="{% if meta_desc %}{{ meta_desc }}{% else %}{{ site.meta_desc }}{% endif %}">
-<meta property="og:image" content="{{ site.cloudinary_url }}{% if meta_og %}{{ meta_og }}{% else %}{{ site.og_img }}{% endif  %}">
+<meta property="og:description" content="{% if meta_desc %}{{ meta_desc | escape }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image" content="{{ site.domain }}{% if meta_og %}{{ meta_og }}{% else %}{{ site.og_img }}{% endif  %}">

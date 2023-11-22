@@ -1,25 +1,22 @@
 ---
 permalink: "/"
-title: "Obsessing about the Outdoors"
+title: "Whimsical White Mountain Mementos"
 ---
 
-<section class="section section--feature">
-  <div>
-    {% assign customSortOrder = "wm48 nh52 pt48 fing pt-adk pt-ski pt14 isles" | split: " " %}
-    {% assign allProducts = collections.products %}
-    {% for sku in customSortOrder %}
-      {% assign currentProduct = allProducts | where: "data.sku", sku %}
-      <div class="card">
-          <img src="{{ site.cloudinary_url }}c_fill,g_center,w_600,h_400/{{ currentProduct[0].data.cover }}.png">
-          <div>
+<section class="section section--cards">
+  {% assign customSortOrder = "wm48 nh52 pt48 pt-adk pt-ski pt14 fing isles" | split: " " %}
+  {% assign allProducts = collections.products %}
+  {% for sku in customSortOrder %}
+    {% assign currentProduct = allProducts | where: "data.sku", sku %}
+      <figure class="card">
+        <a href="{{ currentProduct[0].page.url }}">
+          <img src="{{ prefix.cover }}{{ currentProduct[0].data.cover }}" width="400" height="267" alt="{{ currentProduct[0].data.title }} thumbnail" loading="lazy">
+          <figcaption>
             <h2>
-              <a href="/products/{{ currentProduct[0].data.title | slugify }}/">
-                {{ currentProduct[0].data.title }}
-              </a>
+              {{ currentProduct[0].data.title }}
             </h2>
-            {% comment %} {{ product.data.meta_desc | markdownify }} {% endcomment %}
-          </div>
-        </div>
-    {% endfor %}
-  </div>
+          </figcaption>
+        </a>
+      </figure>
+  {% endfor %}
 </section>

@@ -1,0 +1,4 @@
+[[redirects]]
+from = "https://:url/:transform/:image"
+to = "https://res.cloudinary.com/withbrio/image/fetch/f_auto,q_80/t_:transform/https://:url/images/:image"
+status = 200

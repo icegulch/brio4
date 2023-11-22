@@ -1,0 +1,121 @@
+---
+permalink: "/where-to-buy/index.html"
+title: Where to Buy
+subtitle: Wholesale & Retailers
+---
+
+<section class="section">
+  <div class="product-description">
+    <p>
+      We have a fantastic network retailers throughout the Northeast and beyond, and we'd love to connect you with them. If you're a retailer and you'd like to carry one of our products, please don't hesitate to <a href="/contact/">reach out</a>.
+    </p>
+  </div>
+</section>
+
+<section class="section section--highlighted">
+  <h2 class="section__heading">
+    <svg>
+      <use xlink:href='#online' />
+    </svg>
+    Online Stores
+  </h2>
+  <div class="retailers--online">
+    {% for retailer in collections.retailers %}
+      {% if retailer.data.location_types contains "online" %}
+          <h3>
+            {{ retailer.data.name }}
+          </h3>
+          <ul>
+            {% for product in retailer.data.online_products %}
+              <li>
+                <a href="{{ product.url }}">{{ product.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </dl>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section__heading">
+    {% assign nhRetailers = collections.physicalRetailStores | where: "state", "NH" %}
+      <svg>
+        <use xlink:href='#store' />
+      </svg>
+      {{ "NH" | stateNames }} Stores
+  </h2>
+  <div class="retailers--instore">
+    {% assign cityGroup = nhRetailers | group_by: "city" | sort: "name" %}
+    {% for city in cityGroup %}
+      <h3>
+        {{ city.name }}
+      </h3>
+      <div>
+        {% for location in city.items %}
+            <address>
+              <h4>{{ location.name }}</h4>
+              {{ location.street1 }}{% unless location.street2 == blank %}<br>{{ location.street2 }}{% endunless %}<br>
+              {{ location.city }}, {{ location.state }} {{ location.postal_code }}<br>
+              {% if location.phone %}Phone: <a href="tel:{{ location.phone }}">{{ location.phone }}</a> | {% endif %}
+              {% if location.store_url %}<a href="{{ location.store_url }}">Web</a>{% endif %}
+            </address>
+            <dl>
+              <dt>Available Products:</dt>
+              {% for productTitle in location.products %}
+                <dd>
+                  <a href="/products/{{ productTitle | slugify }}/">
+                    {{ productTitle }}
+                  </a>
+                </dd>
+              {% endfor %}
+            </dl>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% assign otherRetailers = collections.physicalRetailStores | excludeByField: "state", "NH" %}
+{% assign customSortOrder = "MA ME NY CO" | split: " " %}
+{% for state in customSortOrder %}
+  <section class="section">
+    {% assign currentState = otherRetailers | where: "state", state %}
+    <h2 class="section__heading">
+      <svg>
+        <use xlink:href='#store' />
+      </svg>
+      {{ currentState[0].state | stateNames }} Stores
+    </h2>
+    {% assign cityGroup = currentState | group_by: "city" | sort: "name" %}
+    <div class="retailers--instore">
+      {% for city in cityGroup %}
+        <h3>
+          {{ city.name }}
+        </h3>
+        <div>
+          {% for location in city.items %}
+            <address id="{{ location.name | slugify }}">
+              <h4>{{ location.name }}</h4>
+              {{ location.street1 }}{% unless location.street2 == blank %}{{ location.street2 | prepend: ", " }}{% endunless %}<br>
+                  {{ location.city }}, {{ location.state }} {{ location.postal_code }}<br>
+                  {% if location.phone %}Phone: <a href="tel:{{ location.phone }}">{{ location.phone }}</a> | {% endif %}
+                    {% if location.store_url %}<a href="{{ location.store_url }}">Web</a>{% endif %}
+            </address>
+            <dl>
+              <dt>Available Products:</dt>
+              {% for productTitle in location.products %}
+                <dd>
+                  <a href="/products/{{ productTitle | slugify }}/">
+                    {{ productTitle }}
+                  </a>
+                </dd>
+              {% endfor %}
+            </dl>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+{% endfor %}

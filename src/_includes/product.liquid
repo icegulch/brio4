@@ -2,18 +2,36 @@
 layout: base.liquid
 ---
 
-{{ content }}
+<article class="product-description">
+  {{ content | cloudinaryPrependDir }}
+</article>
 
-<ul>
-  {% for retailer in retailersForProduct %}
-    <li>
-      <pre>
+<footer class="product--footer">
+  <dl>
+    <dt>Available at</dt>
+    {% for retailer in retailersForProduct %}
+      <dd class="product--footer__retailers">
         {{ retailer.name -}}
-        {%- unless retailer.storeLocations contains 'Online Only' %}
-          {{ retailer.storeLocations | dump }}
+       [{%- unless retailer.storeLocations contains 'Online Only' %}
+          <a href="/where-to-buy/">
+            In Store
+          </a>
         {% endunless %}
-        {% unless retailer.productUrl == 'Not Offered Online' %}<a href="{{ retailer.productUrl }}">Available Online</a>{% endunless %}
-      </pre>
-    </li>
-  {% endfor %}
-</ul>
+        {% unless retailer.productUrl == 'Not Offered Online' %}
+          <a href="{{ retailer.productUrl }}">Online</a>
+        {% endunless %}]
+      </dd>
+    {% endfor %}
+  </dl>
+  <dl>
+    <dt>You might also like</dt>
+    {% assign remainingProducts = collections.products | excludeByField: "data.sku", "sku" | sort: "data.title" %}
+    {% for product in remainingProducts %}
+      <dd>
+        <a href="{{ product.url }}">
+          {{ product.data.title }}
+        </a>
+      </dd>
+    {% endfor %}
+  </dl>
+</footer>

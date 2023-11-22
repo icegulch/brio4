@@ -1,0 +1,20 @@
+<header class="page-header">
+  <h1>
+    {% if page.fileSlug == 'homepage' %}
+      {{ site.title }}
+    {% else %}
+      {{ title }}
+    {% endif %}
+  </h1>
+  <p>
+    {% if page.fileSlug == 'homepage' %}
+      {{ title }}
+    {% else %}
+      {% if page.filePathStem contains "/content/products/" %}
+        {{ specs | join: ', ' }}
+      {% else %}
+        {{ subtitle }}
+      {% endif %}
+    {% endif %}
+  </p>
+</header>
