@@ -1,14 +1,4 @@
 [[redirects]]
-from = "/favicon/:image"
-to = "https://res.cloudinary.com/withbrio/image/fetch/f_auto/q_80/t_favicon/https://withbr.io/images/:image"
-status = 200
-
-[[redirects]]
-from = "/products/:image"
-to = "https://res.cloudinary.com/withbrio/image/fetch/f_auto/q_80/t_products/https://withbr.io/images/:image"
-status = 200
-
-[[redirects]]
-from = "/covers/:image"
-to = "https://res.cloudinary.com/withbrio/image/fetch/f_auto/q_80/t_covers/https://withbr.io/images/:image"
+from = "/:transform/*"
+to = "https://res.cloudinary.com/withbrio/image/fetch/f_auto,q_80/t_:transform/https://withbr.io/:splat"
 status = 200
