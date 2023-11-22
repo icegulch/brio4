@@ -11,7 +11,7 @@ subtitle: Passports, Posters, and Prints
   {% assign currentProduct = allProducts | where: "data.sku", sku %}
     <figure class="card">
       <a href="{{ currentProduct[0].page.url }}">
-        <img src="{{ prefix.cover }}{{ currentProduct[0].data.cover }}">
+        <img src="{{ prefix.cover }}{{ currentProduct[0].data.cover }}" width="400" height="267" alt="{{ currentProduct[0].data.title }} thumbnail" loading="lazy">
         <figcaption>
           <h2>
             {{ currentProduct[0].data.title }}
