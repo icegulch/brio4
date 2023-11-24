@@ -142,5 +142,4 @@ collections:
       - label: Description
         name: body
         widget: markdown
-        hint: Dimensions, printing process, etc
     sortable_fields: ["commit_date", "title"]
