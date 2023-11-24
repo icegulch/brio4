@@ -140,4 +140,5 @@ collections:
       - label: Description
         name: body
         widget: markdown
+        editor_components: [image_with_dimensions]
     sortable_fields: ["commit_date", "title"]
