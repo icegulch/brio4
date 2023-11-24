@@ -77,7 +77,7 @@
         },
       });
       CMS.registerEditorComponent({
-        label: "Add Image",
+        label: "Image",
         id: "image_with_dimensions",
         collapsed: true,
         fields: [
@@ -118,9 +118,9 @@
             alt: match[4],
           },
         toBlock: function ({ image, width, height, alt }, getAsset, fields) {
-          return `<img src="${cloudinary_url || ""}" width="${
-            width || ""
-          }" height="${height || ""}" alt="${alt || ""}" loading="lazy">`;
+          return `<img src="${image || ""}" width="${width || ""}" height="${
+            height || ""
+          }" alt="${alt || ""}" loading="lazy">`;
         },
         toPreview: ({ image, width, height, alt }, getAsset, fields) => {
           return `<img src="${image}" width="${width}" height="${height}" alt="${alt}" loading="lazy">`;
