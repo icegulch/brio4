@@ -141,4 +141,6 @@ collections:
         name: body
         widget: markdown
         editor_components: [image_with_dimensions]
+        modes: [rich_text]
+        required: true
     sortable_fields: ["commit_date", "title"]
