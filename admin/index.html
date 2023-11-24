@@ -76,6 +76,58 @@
           return entry.get("data").set("last_modified", timeStamp);
         },
       });
+      CMS.registerEditorComponent({
+        label: "Add Image",
+        id: "image_with_dimensions",
+        collapsed: true,
+        fields: [
+          {
+            label: "Image",
+            name: "image",
+            widget: "image",
+            choose_url: false,
+            allow_multiple: false,
+            required: true,
+          },
+          {
+            label: "Width",
+            name: "width",
+            widget: "number",
+            value_type: "int",
+            required: true,
+          },
+          {
+            label: "Height",
+            name: "height",
+            widget: "number",
+            value_type: "int",
+            required: true,
+          },
+          {
+            label: "Alt Text",
+            name: "alt",
+            widget: string,
+            required: true,
+          },
+        ],
+        fromBlock: (match) =>
+          match && {
+            image: match[1],
+            width: match[2],
+            height: match[3],
+            alt: match[4],
+          },
+        toBlock: function ({ image, width, height, alt }, getAsset, fields) {
+          return `<img src="${cloudinary_url || ""}" width="${
+            width || ""
+          }" height="${height || ""}" alt="${alt || ""}" loading="lazy">`;
+        },
+        toPreview: ({ image, width, height, alt }, getAsset, fields) => {
+          return `<img src="${image}" width="${width}" height="${height}" alt="${alt}" loading="lazy">`;
+        },
+        pattern:
+          /^<img src="(.*?)" width="(.*?)" height="(.*?)" alt="(.*?)" loading="lazy">$/s,
+      });
     </script>
   </body>
 </html>

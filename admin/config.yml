@@ -135,7 +135,7 @@ collections:
       - label: Specs
         name: specs
         widget: array
-        hint: Dimensions, printing process, etc
+        hint: Dimensions, printing process, etc. Separate with a comma.
         allow_add: true
       - label: Description
         name: body
