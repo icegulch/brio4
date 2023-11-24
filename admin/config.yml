@@ -121,17 +121,14 @@ collections:
       - label: Title
         name: title
         widget: string
-      - label: SKU
-        name: sku
-        widget: string
-      - label: Open Graph Image
-        name: og_img
+      - label: Cover Image
+        name: cover
         widget: string
         allow_multiple: false
         choose_url: false
-        hint: Image showing in social media shares
-      - label: Meta description
-        name: meta_desc
+        hint: Image shown on listing pages & in social media posts
+      - label: SEO description
+        name: seo_desc
         widget: text
         hint: Description that appears on search results pages and in social media shares
       - label: Specs

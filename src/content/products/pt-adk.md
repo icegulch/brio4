@@ -2,7 +2,7 @@
 sku: pt-adk
 title: Periodic Table of the / Tableau périodique des Adirondack 46
 cover: /images/products/pt-adk-cover.jpg
-meta_desc: An 18" x 24" print that presents a wealth of data on the Adirondack 46 High Peaks in a format similar to the Periodic Table of Elements.
+seo_desc: An 18" x 24" print that presents a wealth of data on the Adirondack 46 High Peaks in a format similar to the Periodic Table of Elements.
 specs:
   - 18" x 24"
   - Offset

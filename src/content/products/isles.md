@@ -2,7 +2,7 @@
 title: Undercast Approaches to the White Isles of New Hampshire
 sku: isles
 cover: /images/products/isles-cover.jpg
-meta_desc: On those magical "undercast" days, when clouds settle in
+seo_desc: On those magical "undercast" days, when clouds settle in
   valleys and summits peek out above, you might find the landscape more nautical
   than orographic. This print runs with that concept, assuming clouds have
   nestled at precisely 4000'.
