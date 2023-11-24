@@ -116,17 +116,26 @@
             width: match[2],
             height: match[3],
             alt: match[4],
+            loading: match[5],
           },
-        toBlock: function ({ image, width, height, alt }, getAsset, fields) {
+        toBlock: function (
+          { image, width, height, alt, loading },
+          getAsset,
+          fields
+        ) {
           return `<img src="${image || ""}" width="${width || ""}" height="${
             height || ""
-          }" alt="${alt || ""}" loading="lazy">`;
+          }" alt="${alt || ""}" loading="${loading || ""}">`;
         },
-        toPreview: ({ image, width, height, alt }, getAsset, fields) => {
-          return `<img src="${image}" width="${width}" height="${height}" alt="${alt}" loading="lazy">`;
+        toPreview: (
+          { image, width, height, alt, loading },
+          getAsset,
+          fields
+        ) => {
+          return `<img src="${image}" width="${width}" height="${height}" alt="${alt}" loading="${loading}">`;
         },
         pattern:
-          /^<img src="(.*?)" width="(.*?)" height="(.*?)" alt="(.*?)" loading="lazy">$/s,
+          /^<img src="(.*?)" width="(.*?)" height="(.*?)" alt="(.*?)" loading="(.*?)">$/s,
       });
     </script>
   </body>
