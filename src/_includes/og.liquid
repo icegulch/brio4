@@ -2,4 +2,4 @@
 <meta property="og:url" content="{{ site.domain }}{{ page.url }}">
 <meta property="og:title" content="{% unless page.fileSlug == 'homepage' or title.length == 0 %}{{ title }} | {% endunless %}{{ site.title }}">
 <meta property="og:description" content="{% if seo_desc %}{{ seo_desc | escape }}{% else %}{{ site.description }}{% endif %}">
-<meta property="og:image" content="{{ prefix.opengraph }}{% if meta_og %}{{ meta_og }}{% else %}{{ site.og_img }}{% endif  %}">
+<meta property="og:image" content="{{ site.domain }}{{ prefix.opengraph }}{% if meta_og %}{{ meta_og }}{% else %}{{ site.og_img }}{% endif  %}">
