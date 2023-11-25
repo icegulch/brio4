@@ -15,5 +15,5 @@ status = 200
 
 [[redirects]]
 from = "/opengraph/*"
-to = "https://res.cloudinary.com/withbrio/image/fetch/f_auto/t_opengraph/https://withbr.io/:splat"
+to = "https://res.cloudinary.com/withbrio/image/fetch/f_jpg/t_opengraph/https://withbr.io/:splat"
 status = 200
