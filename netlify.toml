@@ -12,3 +12,8 @@ status = 200
 from = "/products/*"
 to = "https://res.cloudinary.com/withbrio/image/fetch/f_auto/t_products/https://withbr.io/:splat"
 status = 200
+
+[[redirects]]
+from = "/opengraph/*"
+to = "https://res.cloudinary.com/withbrio/image/fetch/f_auto/t_opengraph/https://withbr.io/:splat"
+status = 200

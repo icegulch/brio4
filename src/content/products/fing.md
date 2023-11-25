@@ -1,7 +1,6 @@
 ---
 title: Topographic Fingerprints of the Four Thousand Footers
 sku: fing
-og_img: og-topographic-fingerprints-of-the-four-thousand-footers
 cover: /images/fing-detail-lit.jpg
 seo_desc: Reminiscent of vintage scientific identification posters, this
   foil-stamped, 16" x 20" print challenges you to become familiar with the

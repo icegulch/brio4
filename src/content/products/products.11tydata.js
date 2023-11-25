@@ -1,7 +1,8 @@
 module.exports = {
   layout: "product.liquid",
   permalink: "/products/{{ title | slugify }}/index.html",
-  eleventyComputed: {
+    eleventyComputed: {
+    meta_og: data => data.cover || null,
     retailersForProduct: (data) => {
       const productTitleToFind = data.title;
       const retailers = [];

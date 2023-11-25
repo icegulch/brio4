@@ -19,6 +19,6 @@ module.exports = {
   description: "With Brio extracts compelling stories from familiar data sets and shares them via data visualizations.",
   env: process.env.ELEVENTY_ENV,
   domain: process.env.ELEVENTY_ENV === "production" ? "https://withbr.io" : "http://localhost:8080",
-  og_img: "/images/og/og_with_brio.jpg",
+  og_img: "/images/wm48-wood-bg.jpg",
   last_updated: getBuildInfo().time.formatted,
 };
