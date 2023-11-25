@@ -25,7 +25,7 @@ module.exports = {
                   // Add the retailer to the list
                   const storeLocations = physicalLocations
                       .filter((location) => location.branch_name || location.city)
-                      .map((location) => location.branch_name || location.city);
+                      .map((location) => location.city);
 
                   retailers.push({
                       name: retailer.data.name,

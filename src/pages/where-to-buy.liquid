@@ -49,7 +49,7 @@ subtitle: Wholesale & Retailers
   <div class="retailers--instore">
     {% assign cityGroup = nhRetailers | group_by: "city" | sort: "name" %}
     {% for city in cityGroup %}
-      <h3>
+      <h3 id="{{ city.name }}">
         {{ city.name }}
       </h3>
       <div>
@@ -91,7 +91,7 @@ subtitle: Wholesale & Retailers
     {% assign cityGroup = currentState | group_by: "city" | sort: "name" %}
     <div class="retailers--instore">
       {% for city in cityGroup %}
-        <h3>
+        <h3 id="{{ city.name }}">
           {{ city.name }}
         </h3>
         <div>

@@ -2,27 +2,43 @@
 layout: base.liquid
 ---
 
-<article class="product-description">
+<section class="section product-description">
   {{ content | cloudinaryPrependDir }}
-</article>
+</section>
 
-<footer class="product--footer">
-  <dl>
-    <dt>Available at</dt>
+<section class="section section--highlighted">
+  <h2 class="section__heading">
+    <svg>
+      <use xlink:href='#store' />
+    </svg>
+    Find at
+  </h2>
+  <div class="retailers--online">
     {% for retailer in retailersForProduct %}
-      <dd class="product--footer__retailers">
-        {{ retailer.name }} 
-       [{%- unless retailer.storeLocations contains 'Online Only' %}
-          <a href="/where-to-buy/">
-            In Store
-          </a>
+      <h3>
+        {{ retailer.name }}
+      </h3>
+      <ul>
+        {%- unless retailer.storeLocations contains 'Online Only' %}
+          {% for location in retailer.storeLocations %}
+            <li>
+              <a href="/where-to-buy/#{{ location }}">
+                {{ location }}
+              </a>
+            </li>
+          {% endfor %}
         {% endunless %}
         {% unless retailer.productUrl == 'Not Offered Online' %}
-          <a href="{{ retailer.productUrl }}">Online</a>
-        {% endunless %}]
-      </dd>
+          <li>
+            <a href="{{ retailer.productUrl }}">Online</a>
+          </li>
+        {% endunless %}
+      </ul>
     {% endfor %}
-  </dl>
+  </div>
+</section>
+
+<footer class="product--footer">
   <dl>
     <dt>You might also like:</dt>
     {% assign remainingProducts = collections.products | excludeByMatchingDataValue: "sku", sku | sort: "data.title" %}
