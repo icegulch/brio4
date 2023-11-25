@@ -9,9 +9,8 @@ specs:
   - 16" x 20"
   - Foil Stamped
   - Screen Printed
-last_modified: 2023-10-22T00:54:19.022Z
+last_modified: 2023-11-25T14:11:24.685Z
 ---
-
 Reminiscent of vintage scientific identification posters, this print challenges you to become familiar with the topographic "fingerprints" of all of New Hampshire's 4000-Footers.
 
 <img src="/images/fing-detail-dark.jpg" width="1600" height="1068" alt="Fingerprints closeup middle" loading="lazy">
@@ -24,6 +23,12 @@ Since summits vary greatly in size, creative license was invoked in fitting each
 
 <img src="/images/fing-depth.jpg" width="2000" height="1335" alt="Fingerprints closeup shimmery contours" loading="lazy">
 
-A portion of this product's profits go directly to the [AMC Four Thousand Footer Club](http://www.amc4000footer.org/).
+In the fall of 2023, we reached out to the flatstock team at [New Duds Screenprinting](https://www.newduds.net/posters) in Colchester, VT to dabble with white ink and some new papers.
 
-<img src="/images/fing-full.jpg" width="1200" height="1546" alt="Fingerprints full poster hanging" loading="lazy">
+<img src="/images/img_3936.jpeg" width="3024" height="4032" alt="New red paper, white ink version" loading="undefined">
+
+We love the results! We picked four colors of [French Paper](https://www.frenchpaper.com/) with linen or cardstock textures. The colors included dark green, dark red, navy, and dark gray.
+
+<img src="/images/img_8413.jpg" width="3024" height="4032" alt="The dark green screenprinted version of the poster" loading="undefined">
+
+A portion of this product's profits go directly to the [AMC Four Thousand Footer Club](http://www.amc4000footer.org/).
