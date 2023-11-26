@@ -177,7 +177,6 @@ figure {
 }
 
 .page-header {
-  /* max-width: 70ch; */
   margin: 80px auto 60px;
   text-align: center;
 }
@@ -217,7 +216,7 @@ figure {
   text-align: center;
 }
 
-.product-description :is(p, ul, ol, li, dl, dt, dd, blockquote) {
+.product-description :is(p, ul, ol, li, dl, dt, dd, blockquote, label) {
   text-align: left;
 }
 
@@ -503,8 +502,6 @@ figure {
 
 
 .contact-form {
-  max-width: 720px;
-  margin-inline: auto;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;

@@ -22,7 +22,7 @@ layout: base.liquid
         {%- unless retailer.storeLocations contains 'Online Only' %}
           {% for location in retailer.storeLocations %}
             <li>
-              <a href="/where-to-buy/#{{ location }}">
+              <a href="/where-to-buy/#{{ location | slugify }}">
                 {{ location }}
               </a>
             </li>

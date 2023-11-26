@@ -4,46 +4,50 @@ title: Contact
 subtitle: Inquiries, comments, questions
 ---
 
-<form
-  class="contact-form"
-  name="contact"
-  netlify-honeypot="fu"
-  action="/contact/thank-you/"
-  netlify>
-  <div hidden>
-    <label>Don’t fill this out: <input name="fu"></label>
+<section class="section">
+  <div class="product-description">
+    <form
+      class="contact-form"
+      name="contact"
+      netlify-honeypot="fu"
+      action="/contact/thank-you/"
+      netlify>
+      <div hidden>
+        <label>Don’t fill this out: <input name="fu"></label>
+      </div>
+      <div class="form-field">
+        <label for="name" class="form-label">
+          Name
+        </label>
+        <input
+          id="name"
+          class="form-control"
+          type="text"
+          name="name">
+      </div>
+      <div class="form-field">
+        <label for="email" class="form-label">
+          Email
+        </label>
+        <input
+          id="email"
+          class="form-control"
+          type="email"
+          name="email">
+      </div>
+      <div class="form-field">
+        <label for="message" class="form-label">
+          Your message
+        </label>
+        <textarea
+          id="message"
+          class="form-control"
+          name="message"
+          rows="10"></textarea>
+      </div>
+      <button class="button-submit">
+        Send
+      </button>
+    </form>
   </div>
-  <div class="form-field">
-    <label for="name" class="form-label">
-      Name
-    </label>
-    <input
-      id="name"
-      class="form-control"
-      type="text"
-      name="name">
-  </div>
-  <div class="form-field">
-    <label for="email" class="form-label">
-      Email
-    </label>
-    <input
-      id="email"
-      class="form-control"
-      type="email"
-      name="email">
-  </div>
-  <div class="form-field">
-    <label for="message" class="form-label">
-      Your message
-    </label>
-    <textarea
-      id="message"
-      class="form-control"
-      name="message"
-      rows="10"></textarea>
-  </div>
-  <button class="button-submit">
-    Send
-  </button>
-</form>
+</section>
