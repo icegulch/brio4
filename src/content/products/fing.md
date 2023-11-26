@@ -11,11 +11,12 @@ specs:
   - Screen Printed
 last_modified: 2023-11-25T14:16:21.534Z
 ---
+
 Reminiscent of vintage scientific identification posters, this print challenges you to become familiar with the topographic "fingerprints" of all of New Hampshire's 4000-Footers.
 
 <img src="/images/fing-detail-dark.jpg" width="1600" height="1068" alt="Fingerprints closeup middle" loading="lazy">
 
-Adapted from the USGS "US Topo" series contour lines, the fingerprints are foil stamped in silver matte on 100# Neenah Classic Crest "patriot blue" paper.
+Adapted from the USGS "US Topo" series contour lines, the fingerprints are foil stamped in silver matte on 100# Neenah Classic Crest 'patriot blue' paper.
 
 <img src="/images/fing-detail-lit.jpg" width="1600" height="1085" alt="Fingerprints closeup lower title" loading="lazy">
 
@@ -31,7 +32,7 @@ We picked four colors of [French Paper](https://www.frenchpaper.com/) with linen
 
 <img src="/images/img_8413.jpg" width="3024" height="4032" alt="The dark green screenprinted version of the poster" loading="undefined">
 
-Suffice it to say, we're pleased as punch with the results! 
+Suffice it to say, we're pleased as punch with the results!
 
 As always, a portion of this product's profits go directly to the [AMC Four Thousand Footer Club](http://www.amc4000footer.org/).
 
