@@ -40,7 +40,7 @@ module.exports = {
               if (matchingProduct) {
                   retailers.push({
                       name: retailer.data.name,
-                      online_url: matchingProduct.url,
+                      productUrl: matchingProduct.url,
                       storeLocations: ["Online Only"],
                   });
               }
