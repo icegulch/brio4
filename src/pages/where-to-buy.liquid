@@ -20,7 +20,8 @@ subtitle: Wholesale & Retailers
     Online Stores
   </h2>
   <div class="retailers--online">
-    {% for retailer in collections.retailers %}
+    {% assign sortedRetailers = collections.retailers | sort: "data.name" %}
+    {% for retailer in sortedRetailers %}
       {% if retailer.data.location_types contains "online" %}
           <h3>
             {{ retailer.data.name }}

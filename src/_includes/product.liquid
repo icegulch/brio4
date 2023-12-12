@@ -14,25 +14,28 @@ layout: base.liquid
     Find at
   </h2>
   <div class="retailers--online">
-    {% for retailer in retailersForProduct %}
+    {% assign retailersPerProduct = retailersForProduct | group_by: "name" | sort: "name" %}
+    {% for retailer in retailersPerProduct %}
       <h3>
         {{ retailer.name }}
       </h3>
       <ul>
-        {%- unless retailer.storeLocations contains 'Online Only' %}
-          {% for location in retailer.storeLocations %}
+        {% for item in retailer.items %}
+          {%- unless item.storeLocations contains 'Online Only' %}
+            {% for location in item.storeLocations %}
             <li>
               <a href="/where-to-buy/#{{ location | slugify }}">
                 {{ location }}
               </a>
             </li>
-          {% endfor %}
-        {% endunless %}
-        {% unless retailer.productUrl == 'Not Offered Online' %}
-          <li>
-            <a href="{{ retailer.productUrl }}">Online</a>
-          </li>
-        {% endunless %}
+            {% endfor %}
+          {% endunless %}
+          {% unless item.productUrl == 'Not Offered Online' %}
+            <li>
+              <a href="{{ item.productUrl }}">Online</a>
+            </li>
+          {% endunless %}
+        {% endfor %}
       </ul>
     {% endfor %}
   </div>
