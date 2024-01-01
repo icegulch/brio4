@@ -2,12 +2,13 @@
 title: Topographic Fingerprints of the Four Thousand Footers
 sku: fing
 cover: /images/fing-detail-lit.jpg
-seo_desc: Reminiscent of vintage scientific identification posters, this foil-stamped, 16" x 20" print challenges you to become familiar with the topographic "fingerprints" of all of New Hampshire's 4000-Footers.
+seo_desc: Reminiscent of vintage scientific identification posters, this
+  foil-stamped, 16" x 20" print challenges you to become familiar with the
+  topographic "fingerprints" of all of New Hampshire's 4000-Footers.
 specs:
   - 16" x 20"
-  - Foil Stamped
   - Screen Printed
-last_modified: 2024-01-01T15:09:01.814Z
+last_modified: 2024-01-01T15:20:13.354Z
 ---
 
 Reminiscent of vintage scientific identification posters, this print challenges you to become familiar with the topographic "fingerprints" of all of New Hampshire's 4000-Footers.
