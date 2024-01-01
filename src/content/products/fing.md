@@ -9,7 +9,7 @@ specs:
   - 16" x 20"
   - Foil Stamped
   - Screen Printed
-last_modified: 2024-01-01T14:34:53.992Z
+last_modified: 2024-01-01T14:35:37.148Z
 ---
 Reminiscent of vintage scientific identification posters, this print challenges you to become familiar with the topographic "fingerprints" of all of New Hampshire's 4000-Footers.
 
