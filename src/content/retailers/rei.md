@@ -30,16 +30,17 @@ physical_locations:
     state: NH
     store_url: https://www.rei.com/stores/bedford
     email: null
-  - branch_name: Cambridge
-    street1: 181 Morgan Ave
-    street2: Suite 1
-    city: " Cambridge"
-    state: MA
-    postal_code: "02141"
-    phone: (781) 827-3700
+  - postal_code: "02141"
     products:
       - White Mountain 4000-Footers Passport
       - New Hampshire 52 With A View Passport
+    branch_name: Cambridge
+    city: " Cambridge"
+    street1: 181 Morgan Ave
+    phone: (781) 827-3700
+    street2: Suite 1
+    state: MA
+    store_url: https://www.rei.com/stores/cambridge
 online_products: []
-last_modified: 2024-01-08T22:14:08.717Z
+last_modified: 2024-01-08T22:15:37.221Z
 ---
