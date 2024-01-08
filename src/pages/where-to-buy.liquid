@@ -39,7 +39,7 @@ subtitle: Wholesale & Retailers
   </div>
 </section>
 
-<section class="section">
+<section id="new-hampshire" class="section">
   <h2 class="section__heading">
     {% assign nhRetailers = collections.physicalRetailStores | where: "state", "NH" %}
       <svg>
@@ -50,7 +50,7 @@ subtitle: Wholesale & Retailers
   <div class="retailers--instore">
     {% assign cityGroup = nhRetailers | group_by: "city" | sort: "name" %}
     {% for city in cityGroup %}
-      <h3 id="{{ city.name | slugify }}">
+      <h3 id="{{- city.name | slugify -}}">
         {{ city.name }}
       </h3>
       <div>
@@ -81,8 +81,8 @@ subtitle: Wholesale & Retailers
 {% assign otherRetailers = collections.physicalRetailStores | excludeByMatchingValue: "state", "NH" %}
 {% assign customSortOrder = "MA ME NY CO" | split: " " %}
 {% for state in customSortOrder %}
-  <section class="section">
-    {% assign currentState = otherRetailers | where: "state", state %}
+  {% assign currentState = otherRetailers | where: "state", state %}
+  <section id="{{ currentState[0].state | stateNames | slugify }}" class="section">
     <h2 class="section__heading">
       <svg>
         <use xlink:href='#store' />
@@ -92,7 +92,7 @@ subtitle: Wholesale & Retailers
     {% assign cityGroup = currentState | group_by: "city" | sort: "name" %}
     <div class="retailers--instore">
       {% for city in cityGroup %}
-        <h3 id="{{ city.name }}">
+        <h3 id="{{- city.name | slugify -}}">
           {{ city.name }}
         </h3>
         <div>
