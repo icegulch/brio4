@@ -41,6 +41,20 @@ physical_locations:
     street2: Suite 1
     state: MA
     store_url: https://www.rei.com/stores/cambridge
+  - postal_code: "02043"
+    products:
+      - Topographic Fingerprints of the Four Thousand Footers
+      - Undercast Approaches to the White Isles of New Hampshire
+      - New Hampshire 52 With A View Passport
+      - White Mountain 4000-Footers Passport
+      - Periodic Table of White Mountain 4000-Footers
+    branch_name: Hingham
+    city: Hingham
+    street1: 98 Old Derby St
+    phone: (781) 740-9430
+    street2: Suite 470
+    state: MA
+    store_url: https://www.rei.com/stores/hingham
 online_products: []
-last_modified: 2024-01-08T22:15:37.221Z
+last_modified: 2024-01-18T01:54:39.463Z
 ---
