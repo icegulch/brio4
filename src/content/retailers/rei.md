@@ -55,6 +55,15 @@ physical_locations:
     street2: Suite 470
     state: MA
     store_url: https://www.rei.com/stores/hingham
+  - branch_name: Rochester
+    street1: 450 E Henrietta Rd
+    city: Rochester
+    state: NY
+    postal_code: "14620"
+    phone: (585) 242-0787
+    store_url: https://www.rei.com/stores/rochester
+    products:
+      - Periodic Table of the / Tableau périodique des Adirondack 46
 online_products: []
-last_modified: 2024-01-18T01:54:39.463Z
+last_modified: 2024-01-21T18:45:40.062Z
 ---
