@@ -16,7 +16,7 @@ const getBuildInfo = () => {
 
 module.exports = {
   title: "With Brio",
-  description: "With Brio extracts compelling stories from familiar data.",
+  description: "With Brio extracts compelling stories from familiar data creating whimisical mountain mementos.",
   env: process.env.ELEVENTY_ENV,
   domain: process.env.ELEVENTY_ENV === "production" ? "https://withbr.io" : "http://localhost:8080",
   og_img: "/images/wm48-wood-bg.jpg",
