@@ -4,6 +4,14 @@ layout: base.liquid
 
 <section class="section product-description">
   {{ content | cloudinaryPrependDir }}
+  {% unless sku == 'pt-ski' %}
+    <p>
+      A portion of this product's profits go <a href="/about/">directly to trail organizations we support</a>.
+    </p>
+    <p>
+      We have a fantastic network retailers throughout the Northeast and beyond, and we'd love to connect you with them. If you're a retailer and you'd like to carry one of our products, please don't hesitate <a href="/contact/">to reach out</a>.
+    </p>
+  {% endunless %}
 </section>
 
 <section class="section section--highlighted">

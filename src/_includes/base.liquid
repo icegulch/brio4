@@ -40,7 +40,7 @@
       </a>
       <nav class="header-nav">
         {% assign currentUrl =  page.url %}
-        {% assign allPages = 'Products,Where to Buy,Contact' | split: ',' %}
+        {% assign allPages = 'Products,Where to Buy,About,Contact' | split: ',' %}
         {% for item in allPages %}
           {% assign leSlug = item | slugify | prepend: '/' | append: '/' %}
           <a href="{{ leSlug }}" {% if currentUrl == leSlug %}aria-current="page" {% endif %}class="menu-item{% if currentUrl == leSlug %} active{% endif %}">
