@@ -14,6 +14,11 @@ to = "https://res.cloudinary.com/withbrio/image/fetch/f_auto/t_products/https://
 status = 200
 
 [[redirects]]
+from = "/about/*"
+to = "https://res.cloudinary.com/withbrio/image/fetch/f_auto/t_products/https://withbr.io/:splat"
+status = 200
+
+[[redirects]]
 from = "/opengraph/*"
 to = "https://res.cloudinary.com/withbrio/image/fetch/f_jpg/t_opengraph/https://withbr.io/:splat"
 status = 200
