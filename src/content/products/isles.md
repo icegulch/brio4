@@ -28,6 +28,4 @@ The map's novelty doesn't stop at the conceptual level, though. Incorporating pr
 
 <img src="/images/isles-pemi.jpg" width="1600" height="1068" alt="Undercast Approaches to the White Isles full poster hanging" loading="lazy}">
 
-A portion of this product's profits go directly to the [AMC Four Thousand Footer Club](http://www.amc4000footer.org/).
-
 <img src="/images/isles-compass.jpg" width="1500" height="1001" alt="Undercast Approaches to the White Isles full poster image" loading="lazy">
