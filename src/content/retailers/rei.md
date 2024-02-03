@@ -64,6 +64,18 @@ physical_locations:
     store_url: https://www.rei.com/stores/rochester
     products:
       - Periodic Table of the / Tableau périodique des Adirondack 46
+  - branch_name: Reading
+    street1: 279 Salem St
+    city: Reading
+    state: MA
+    postal_code: "01867"
+    phone: 781-944-5103
+    store_url: https://www.rei.com/stores/reading
+    products:
+      - Topographic Fingerprints of the Four Thousand Footers
+      - New Hampshire 52 With A View Passport
+      - White Mountain 4000-Footers Passport
+      - Periodic Table of White Mountain 4000-Footers
 online_products: []
-last_modified: 2024-01-21T18:45:40.062Z
+last_modified: 2024-02-03T12:18:51.116Z
 ---
