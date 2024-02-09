@@ -76,6 +76,15 @@ physical_locations:
       - New Hampshire 52 With A View Passport
       - White Mountain 4000-Footers Passport
       - Periodic Table of White Mountain 4000-Footers
+  - branch_name: Lakewood
+    street1: 5375 S Wadsworth Blvd LAKEWOOD
+    city: Lakewood
+    state: CO
+    postal_code: "80123"
+    store_url: https://www.rei.com/stores/lakewood
+    phone: (303) 932-0600
+    products:
+      - Periodic Table of the Fifty-Something Colorado Fourteeners
 online_products: []
-last_modified: 2024-02-03T12:18:51.116Z
+last_modified: 2024-02-09T20:29:52.575Z
 ---
