@@ -85,6 +85,19 @@ physical_locations:
     phone: (303) 932-0600
     products:
       - Periodic Table of the Fifty-Something Colorado Fourteeners
+  - branch_name: Framingham
+    street1: 375 Cochituate Rd
+    city: Framingham
+    state: MA
+    postal_code: "01701"
+    store_url: https://www.rei.com/stores/framingham
+    products:
+      - Topographic Fingerprints of the Four Thousand Footers
+      - New Hampshire 52 With A View Passport
+      - Periodic Table of White Mountain 4000-Footers
+      - White Mountain 4000-Footers Passport
+      - Undercast Approaches to the White Isles of New Hampshire
+    phone: (508) 270-6325
 online_products: []
-last_modified: 2024-02-09T20:29:52.575Z
+last_modified: 2024-02-18T22:58:13.083Z
 ---
