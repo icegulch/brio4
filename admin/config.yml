@@ -3,7 +3,7 @@ backend:
   name: git-gateway
   branch: main
 
-logo_url: https://res.cloudinary.com/car-talk-vehicle-donation-program/image/upload/v1674870469/ct-logo.svg
+logo_url: https://res.cloudinary.com/withbrio/image/upload/v1711620425/brio-logo.svg
 show_preview_links: false
 
 media_folder: "src/images/" # Media files will be stored in the repo under static/images/
