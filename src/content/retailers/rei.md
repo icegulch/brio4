@@ -98,6 +98,18 @@ physical_locations:
       - White Mountain 4000-Footers Passport
       - Undercast Approaches to the White Isles of New Hampshire
     phone: (508) 270-6325
+  - branch_name: Westbrook
+    street1: 90 Rock Row
+    street2: Suite 100
+    city: Westbrook
+    state: ME
+    postal_code: "04092"
+    store_url: https://www.rei.com/stores/westbrook
+    products:
+      - New Hampshire 52 With A View Passport
+      - Periodic Table of White Mountain 4000-Footers
+      - White Mountain 4000-Footers Passport
+    phone: (207) 591-2160
 online_products: []
 last_modified: 2024-02-18T22:58:13.083Z
 ---
