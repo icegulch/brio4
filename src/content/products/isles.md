@@ -12,7 +12,7 @@ specs:
 last_modified: 2023-10-22T00:58:35.732Z
 ---
 
-On those magical [undercast](https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/307015451_444053957760263_4362850729593316655_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=pd9mxQPlY58AX8FULG6&_nc_ht=scontent-ord5-2.xx&oh=00_AfCWT2_WQcn2nuC1-MBcmKOLfkqiTsvAZREwI7FDeLTPTA&oe=653983B7) days, when clouds settle in valleys and summits peek out above, you might find the landscape more nautical than orographic. This print runs with that concept, visualizing what New Hampshire would look like if "sea level" (cloud level) were at precisely 4000'.
+On those magical [undercast](https://youtu.be/8u7UXb6dJrg?si=sORw-57vxmNv0tRH) days, when clouds settle in valleys and summits peek out above, you might find the landscape more nautical than orographic. This print runs with that concept, visualizing what New Hampshire would look like if "sea level" (cloud level) were at precisely 4000'.
 
 <img src="/images/isles-graphic.png" width="1500" height="1000" alt="Undercast Approaches to the White Isles closeup middle" loading="lazy">
 
