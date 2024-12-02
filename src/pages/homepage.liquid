@@ -4,7 +4,7 @@ title: "Whimsical mountain mementos"
 ---
 
 <section class="section section--cards">
-  {% assign customSortOrder = "wm48 nh52 pt48 pt-adk pt-ski pt14 fing isles" | split: " " %}
+  {% assign customSortOrder = "wm48 nh52 pt48 subnh subadk sub14 pt-adk pt-ski pt14 fing isles" | split: " " %}
   {% assign allProducts = collections.products %}
   {% for sku in customSortOrder %}
     {% assign currentProduct = allProducts | where: "data.sku", sku %}

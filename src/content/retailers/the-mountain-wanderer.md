@@ -9,6 +9,7 @@ physical_locations:
       - Periodic Table of the / Tableau périodique des Adirondack 46
       - Periodic Table of White Mountain 4000-Footers
       - White Mountain 4000-Footers Passport
+      - White Mountain Regional Transit
     branch_name: null
     city: Lincoln
     street1: PO Box 485

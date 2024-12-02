@@ -10,7 +10,11 @@ physical_locations:
     phone: 800-304-5029
     email:
     store_url: https://artsourceinternational.com/
-    products: [Periodic Table of the Fifty-Something Colorado Fourteeners]
+    products:
+      [
+        Periodic Table of the Fifty-Something Colorado Fourteeners,
+        Colorado Fourteener Transit,
+      ]
 online_products:
   - title: Periodic Table of the Fifty-Something Colorado Fourteeners
     url: https://artsourceinternational.com/shop/vintage-posters/periodic-table-of-the-fifty-something-colorado-fourteeners/
