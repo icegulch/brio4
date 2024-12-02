@@ -15,8 +15,12 @@ This 16” x 20” print reimagines the Adirondack High Peaks as subway lines wi
 
 Each “station” is represented by a shape corresponding to a peak’s difficulty—moderate, strenuous, or difficult—offering a playful and whimsical way to track your progress across the Adirondacks’ iconic summits.
 
+<img src="/images/sub-adk2.jpg" width="3000" height="2012" alt="Detail picture showing some stations along the subway lines" loading="lazy">
+
 Regional lines, such as the Northville-Placid Trail and Northern Forest Canoe Trail, are also included, adding extra context.
 
 Recognizable subway features, like Grand Central Transfer and Times Square, are incorporated to make this map a familiar yet imaginative exploration of the Adirondacks.
+
+<img src="/images/sub-adk1.jpg" width="3000" height="2012" alt="Detail picture of Times Square within the transit network" loading="lazy">
 
 Whether you’re planning your next climb or reminiscing about your Adirondack adventures, this print is a creative, fun way to navigate the peaks of upstate New York.

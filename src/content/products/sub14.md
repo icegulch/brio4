@@ -15,6 +15,10 @@ This 16” x 20” print transforms Colorado’s Fourteener mountain ranges into
 
 Each “station” takes the form of a shape that corresponds to a peak’s difficulty—Class 1, Class 2, Class 3, and Class 4—offering a fun and whimsical way to track your progress across Colorado’s 14,000-foot peaks.
 
+<img src="/images/sub-CO1.jpg" width="3000" height="2012" alt="Detail view of print showing the left side" loading="lazy">
+
 Regional lines, like the Continental Divide Trail and Colorado Trail, are also featured, adding extra context to this imaginative transit system.
+
+<img src="/images/sub-CO2.jpg" width="3000" height="2012" alt="Detail view of print showing the left side" loading="lazy">
 
 Whether you’re planning your next climb or reminiscing about the Centennial State, this print provides a creative, playful way to explore the Rockies.

@@ -13,6 +13,8 @@ This 18” x 24” print recasts the Northeast’s iconic hiking lists—such as
 
 <img src="/images/sub-nh-overview.png" width="3000" height="2012" alt="Overview image of the White Mountain Regional Transit print" loading="lazy">
 
-With 150 stations, this imaginary network diagram highlights "local" and "regional" services across New Hampshire, Maine, and Vermont, as well as key "express" services in New Hampshire like the Presidential Traverse and Pemi Loop.
+With 150 stations, this imaginary network diagram highlights "local" and "regional" services across New Hampshire, Maine, and Vermont, as well as "express" services in New Hampshire like the Presidential Traverse and Pemi Loop.
 
-Visualize <u>your path</u> through the region’s iconic hiking challenges while adding a dash of metropolitain to your mountain mementos.
+<img src="/images/sub-nh1.jpg" width="3000" height="2012" alt="Detail picture of print" loading="lazy">
+
+Visualize _your_ path through the region’s iconic hiking challenges while adding a dash of metropolitain to your mountain mementos.

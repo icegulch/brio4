@@ -7,6 +7,7 @@ physical_locations:
       - White Mountain 4000-Footers Passport
       - Periodic Table of White Mountain 4000-Footers
       - Topographic Fingerprints of the Four Thousand Footers
+      - White Mountain Regional Transit
     branch_name: North Conway
     city: North Conway
     street1: 1498 White Mountain Hwy
