@@ -15,6 +15,7 @@ physical_locations:
         New Hampshire 52 With A View Passport,
         White Mountain 4000-Footers Passport,
         Periodic Table of White Mountain 4000-Footers,
+        White Mountain Regional Transit,
       ]
   - branch_name: Joe Dodge Lodge
     street1: 361 NH-16
@@ -30,6 +31,7 @@ physical_locations:
         New Hampshire 52 With A View Passport,
         White Mountain 4000-Footers Passport,
         Periodic Table of White Mountain 4000-Footers,
+        White Mountain Regional Transit,
       ]
 online_products:
   - title: New Hampshire 52 With A View Passport
