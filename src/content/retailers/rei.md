@@ -35,6 +35,8 @@ physical_locations:
     products:
       - White Mountain 4000-Footers Passport
       - New Hampshire 52 With A View Passport
+      - Periodic Table of White Mountain 4000-Footers
+      - White Mountain Regional Transit
     branch_name: Cambridge
     city: " Cambridge"
     street1: 181 Morgan Ave
