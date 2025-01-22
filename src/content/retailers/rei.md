@@ -80,7 +80,7 @@ physical_locations:
       - White Mountain 4000-Footers Passport
       - Periodic Table of White Mountain 4000-Footers
   - branch_name: Lakewood
-    street1: 5375 S Wadsworth Blvd LAKEWOOD
+    street1: 5375 S Wadsworth Blvd
     city: Lakewood
     state: CO
     postal_code: "80123"
@@ -88,6 +88,17 @@ physical_locations:
     phone: (303) 932-0600
     products:
       - Periodic Table of the Fifty-Something Colorado Fourteeners
+      - Colorado Fourteener Transit
+  - branch_name: Fort Collins
+    street1: 4025 S College Ave
+    city: Fort Collins
+    state: CO
+    postal_code: "80525"
+    store_url: https://www.rei.com/stores/fort-collins
+    phone: (970) 223-0123
+    products:
+      - Periodic Table of the Fifty-Something Colorado Fourteeners
+      - Colorado Fourteener Transit
   - branch_name: Framingham
     street1: 375 Cochituate Rd
     city: Framingham
