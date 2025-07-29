@@ -36,7 +36,6 @@ physical_locations:
       - White Mountain 4000-Footers Passport
       - New Hampshire 52 With A View Passport
       - Periodic Table of White Mountain 4000-Footers
-      - White Mountain Regional Transit
     branch_name: Cambridge
     city: " Cambridge"
     street1: 181 Morgan Ave
@@ -66,6 +65,7 @@ physical_locations:
     phone: (585) 242-0787
     store_url: https://www.rei.com/stores/rochester
     products:
+      - Adirondack High Peaks Transit
       - Periodic Table of the / Tableau périodique des Adirondack 46
   - branch_name: Reading
     street1: 279 Salem St
