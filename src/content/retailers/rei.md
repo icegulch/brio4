@@ -123,6 +123,7 @@ physical_locations:
       - New Hampshire 52 With A View Passport
       - Periodic Table of White Mountain 4000-Footers
       - White Mountain 4000-Footers Passport
+      - Topographic Fingerprints of the Four Thousand Footers
     phone: (207) 591-2160
 online_products: []
 last_modified: 2024-02-18T22:58:13.083Z
