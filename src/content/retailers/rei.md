@@ -111,6 +111,7 @@ physical_locations:
       - Periodic Table of White Mountain 4000-Footers
       - White Mountain 4000-Footers Passport
       - Undercast Approaches to the White Isles of New Hampshire
+      - White Mountain Regional Transit
     phone: (508) 270-6325
   - branch_name: Westbrook
     street1: 90 Rock Row

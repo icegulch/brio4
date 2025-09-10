@@ -4,12 +4,12 @@ sku: subadk
 cover: /images/sub-adk-overview.png
 seo_desc: A 16” x 20” print for aspiring Adirondack peak baggers, recasting High Peaks regions as subway lines in a vibrant, fare-free network.
 specs:
-  - 16" x 20"
+  - 20" x 16"
   - Offset Printed, 80# Endurance Gloss Cover
 last_modified: 2024-12-15T00:00:00.000Z
 ---
 
-This 16” x 20” print reimagines the Adirondack High Peaks as subway lines within a vibrant, fare-free network, inspired by the New York City subway map.
+This 20” x 16” print reimagines the Adirondack High Peaks as subway lines within a vibrant, fare-free network, inspired by the New York City subway map.
 
 <img src="/images/sub-adk-overview.png" width="3000" height="2012" alt="Overview image of the Adirondack High Peaks Transit print" loading="lazy">
 

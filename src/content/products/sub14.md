@@ -4,12 +4,12 @@ sku: sub14
 cover: /images/sub-14-overview.png
 seo_desc: A 16” x 20” print depicting Colorado Fourteener ranges as subway lines in a vibrant, fare-free network.
 specs:
-  - 16" x 20"
+  - 20" x 16"
   - Offset Printed, 80# Endurance Gloss Cover
 last_modified: 2024-12-15T00:00:00.000Z
 ---
 
-This 16” x 20” print transforms Colorado’s Fourteener mountain ranges into subway lines within a vibrant, fare-free network.
+This 20” x 16” print transforms Colorado’s Fourteener mountain ranges into subway lines within a vibrant, fare-free network.
 
 <img src="/images/sub-14-overview.png" width="3000" height="2012" alt="Overview image of the Colorado Fourteener Transit print" loading="lazy">
 
