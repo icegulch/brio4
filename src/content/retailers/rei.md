@@ -68,6 +68,19 @@ physical_locations:
     products:
       - Adirondack High Peaks Transit
       - Periodic Table of the / Tableau périodique des Adirondack 46
+  - branch_name: Amherst
+    street1: 1701 Niagara Falls Blvd.
+    street2: Suite 500
+    city: Amherst
+    state: NY
+    postal_code: "14228"
+    phone: (413) 406-3005
+    store_url: https://www.rei.com/stores/amherst
+    products:
+      - Adirondack High Peaks Transit
+      - Periodic Table of the / Tableau périodique des Adirondack 46
+      - New Hampshire 52 With A View Passport
+      - White Mountain 4000-Footers Passport
   - branch_name: Reading
     street1: 279 Salem St
     city: Reading
