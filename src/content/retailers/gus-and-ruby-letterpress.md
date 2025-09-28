@@ -46,7 +46,4 @@ physical_locations:
         New Hampshire 52 With A View Passport,
         White Mountain 4000-Footers Passport,
       ]
-online_products:
-  - title: Topographic Fingerprints of the Four Thousand Footers
-    url: https://store.gusandruby.com/wbpr-topographic-fingerprints-of-the-4000-footers.html
 ---

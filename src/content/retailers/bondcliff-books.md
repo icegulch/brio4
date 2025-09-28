@@ -21,6 +21,4 @@ online_products:
     url: https://www.bondcliffbooks.com/proddetail.php?prod=BB0052WV110818
   - title: White Mountain 4000-Footers Passport
     url: http://www.bondcliffbooks.com/proddetail.php?prod=BRIO08182015-1
-  - title: Periodic Table of White Mountain 4000-Footers
-    url: https://www.bondcliffbooks.com/proddetail.php?prod=BRIO08182015-02
 ---

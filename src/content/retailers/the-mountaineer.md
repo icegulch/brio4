@@ -15,8 +15,5 @@ physical_locations:
         Adirondack High Peaks Transit,
         Periodic Table of the / Tableau périodique des Adirondack 46,
       ]
-online_products:
-  - title: Periodic Table of the / Tableau périodique des Adirondack 46
-    url: https://mountaineer.com/periodic-table-of-the-adirondack-46-poster/
 last_modified: 2023-10-26T16:51:05.649Z
 ---
