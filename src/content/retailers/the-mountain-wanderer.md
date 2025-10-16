@@ -26,6 +26,8 @@ online_products:
     url: http://www.mountainwanderer.com/proddetail.php?prod=NHH4000
   - title: Periodic Table of White Mountain 4000-Footers
     url: http://www.mountainwanderer.com/proddetail.php?prod=POS6
+  - title: White Mountain Regional Transit
+    url: https://www.mountainwanderer.com/proddetail.php?prod=POS12
   - url: http://www.mountainwanderer.com/proddetail.php?prod=POS46
     title: Periodic Table of the / Tableau périodique des Adirondack 46
 last_modified: 2023-10-22T01:22:03.865Z
